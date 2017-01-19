@@ -1,0 +1,36 @@
+/*core folder*/
+@import 'core/variables';
+@import 'core/mixins';
+
+/*desctop folder*/
+@import 'desctop/common';
+@import 'desctop/header';
+@import 'desctop/footer';
+@import 'desctop/magnific-popup.less';
+@import 'desctop/popup.less';
+
+@import 'desctop/index';
+
+.seo-text-wrapper {
+  background: #333333;
+}
+.seo-text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 100px;
+  color: #666666;
+  &:empty {
+    display: none;
+  }
+  * {
+    color: #666666;
+  }
+  p {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+}
+b {
+  font-weight: normal;
+  font-family: @bold;
+}

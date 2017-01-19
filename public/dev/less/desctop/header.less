@@ -1,0 +1,74 @@
+.header {
+  margin: 0 auto;
+  max-width: 1200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 50px 75px;
+  background: url("../img/header_back.png") no-repeat top center;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .consult {
+      margin-top: 10px;
+      width: 245px;
+      .top-text {
+        color: #999999;
+      }
+      .question {
+        position: relative;
+        margin-top: 9px;
+        font-size: 24px;
+        &::after {
+          content: @letter;
+          position: absolute;
+          left: 180px;
+        }
+      }
+    }
+    .phones {
+      margin-top: 10px;
+      width: 245px;
+      text-align: right;
+      .top-text {
+        color: #999999;
+      }
+      .tel-num {
+        position: relative;
+        margin-top: 6px;
+        color: #666666;
+        font-size: 28px;
+        &::before {
+          content: @top_tel;
+          position: absolute;
+          left: -37px;
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .menu-item {
+      margin: 0 5px;
+      &.active {
+        margin: 0;
+        a {
+          color: #333333;
+          background: #ebe6c8;
+          padding: 3px 5px;
+        }
+      }
+    }
+    .delimiter {
+      color: #9E9E9E;
+      margin: 0 25px;
+    }
+  }
+}

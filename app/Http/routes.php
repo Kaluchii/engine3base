@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index.index');
+});
+Route::get('/flats', function () {
+    return view('front.flats.flat');
 });
 
 Route::get('/taxonomy', 'TestController@showTaxonomy');
