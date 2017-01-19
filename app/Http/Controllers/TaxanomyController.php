@@ -7,8 +7,17 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
+use Interpro\Core\Contracts\Taxonomy\Taxonomy;
 
-class Controller extends BaseController
+class TaxanomyController extends Controller
 {
-    use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
+    private $tax;
+    public function __construct(Taxonomy $taxonomy){
+        $this->tax = $taxonomy;
+    }
+
+    public function getStruct(){
+        $blocks = $this->tax->getBlock('new_block');
+        dd($blocks);
+    }
 }

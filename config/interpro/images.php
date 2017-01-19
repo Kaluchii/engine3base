@@ -1,20 +1,20 @@
 <?php
 
 return [
-
-    'modimages.wmimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'static_all_site.logo'=> [
+        'resizes' => ['preview']
     ],
-
-    'modimages.maskimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'slider.slide' => [
+        'resizes' => ['preview']
     ],
-
-    'group_bird_class.foto' => [
-        'resizes' => ['res100x100', 'res400', 'res800', 'res1000'],
-        'crops' => ['crop800x600']
+    'slider_from.slide' => [
+        'resizes' => ['preview']
+    ],
+    'flat.panorame' => [
+        'resizes' => ['preview', 'panorama']
+    ],
+    'place.place_photo' => [
+        'resizes' => ['preview','place']
     ]
 
 ];

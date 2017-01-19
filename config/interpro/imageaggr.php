@@ -3,7 +3,7 @@
 return [
 
     'dirs' => [
-        'images' => '',
+        'images' => 'images',
         'tmp' => 'tmp',
         'placeholders' => 'placeholders',
         'crops' => 'crops',
@@ -12,7 +12,7 @@ return [
     ],
 
     'paths' => [
-        'images' => '',
+        'images' => 'images',
         'tmp' => 'tmp',
         'placeholders' => 'placeholders',
         'crops' => 'crops',

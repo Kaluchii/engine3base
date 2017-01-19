@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "15c48f87a97714c9f456ff41f056aadb",
-    "content-hash": "1a28fc7b449d6b9cd348fbbc688a3b95",
+    "hash": "768c8ff3129e3fff931b2bcf9aafd85d",
+    "content-hash": "cdfa3d1bc749e466bdb9e2b7cd302d6f",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -264,16 +264,16 @@
         },
         {
             "name": "interpro/entrance",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/entrance.git",
-                "reference": "118aab4cc05856843f77f8be4ec4d19ea545c88c"
+                "reference": "2b7b4ffe846862b6963a57aa14ab2e7405d90ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/entrance/zipball/118aab4cc05856843f77f8be4ec4d19ea545c88c",
-                "reference": "118aab4cc05856843f77f8be4ec4d19ea545c88c",
+                "url": "https://api.github.com/repos/intpro/entrance/zipball/2b7b4ffe846862b6963a57aa14ab2e7405d90ebd",
+                "reference": "2b7b4ffe846862b6963a57aa14ab2e7405d90ebd",
                 "shasum": ""
             },
             "require": {
@@ -311,7 +311,7 @@
             "keywords": [
                 "entrance"
             ],
-            "time": "2017-01-15 09:25:14"
+            "time": "2017-01-17 08:52:27"
         },
         {
             "name": "interpro/extractor",
@@ -361,16 +361,16 @@
         },
         {
             "name": "interpro/feedback",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/feedback.git",
-                "reference": "a7364ffcb13be05cf8e41930adf603fbee2d8104"
+                "reference": "0300b7b455ca138bc920caa99a7ac211f90666e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/feedback/zipball/a7364ffcb13be05cf8e41930adf603fbee2d8104",
-                "reference": "a7364ffcb13be05cf8e41930adf603fbee2d8104",
+                "url": "https://api.github.com/repos/intpro/feedback/zipball/0300b7b455ca138bc920caa99a7ac211f90666e9",
+                "reference": "0300b7b455ca138bc920caa99a7ac211f90666e9",
                 "shasum": ""
             },
             "require": {
@@ -405,20 +405,20 @@
             "keywords": [
                 "feedback"
             ],
-            "time": "2017-01-16 07:59:55"
+            "time": "2017-01-16 19:06:47"
         },
         {
             "name": "interpro/imageaggr",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/imageaggr.git",
-                "reference": "d864fb3f07d951c55aa6a9b15f30d3e0cee7030b"
+                "reference": "bf0625c5c6a48353f904d7647a046fa6ed12dc3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/d864fb3f07d951c55aa6a9b15f30d3e0cee7030b",
-                "reference": "d864fb3f07d951c55aa6a9b15f30d3e0cee7030b",
+                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/bf0625c5c6a48353f904d7647a046fa6ed12dc3f",
+                "reference": "bf0625c5c6a48353f904d7647a046fa6ed12dc3f",
                 "shasum": ""
             },
             "require": {
@@ -453,20 +453,20 @@
             "keywords": [
                 "imageaggr"
             ],
-            "time": "2017-01-16 08:12:11"
+            "time": "2017-01-18 09:24:14"
         },
         {
             "name": "interpro/qsaggr",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/qsaggr.git",
-                "reference": "06e7d99f7d7d95e464b65d566533a67a7c5aebcc"
+                "reference": "ef054fccc720c981178e0cc3b110481b5bb92d5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/06e7d99f7d7d95e464b65d566533a67a7c5aebcc",
-                "reference": "06e7d99f7d7d95e464b65d566533a67a7c5aebcc",
+                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/ef054fccc720c981178e0cc3b110481b5bb92d5a",
+                "reference": "ef054fccc720c981178e0cc3b110481b5bb92d5a",
                 "shasum": ""
             },
             "require": {
@@ -500,20 +500,20 @@
             "keywords": [
                 "qsaggr"
             ],
-            "time": "2016-12-29 08:45:16"
+            "time": "2017-01-19 08:29:49"
         },
         {
             "name": "interpro/scalar",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/scalar.git",
-                "reference": "02453d4c814373019d065fb250b56d4fbe04a4af"
+                "reference": "505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/scalar/zipball/02453d4c814373019d065fb250b56d4fbe04a4af",
-                "reference": "02453d4c814373019d065fb250b56d4fbe04a4af",
+                "url": "https://api.github.com/repos/intpro/scalar/zipball/505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2",
+                "reference": "505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2",
                 "shasum": ""
             },
             "require": {
@@ -547,7 +547,7 @@
             "keywords": [
                 "scalar"
             ],
-            "time": "2017-01-15 09:33:04"
+            "time": "2017-01-17 08:45:38"
         },
         {
             "name": "interpro/seo",

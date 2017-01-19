@@ -18,7 +18,7 @@
             <div class="delimiter">•</div>
             <div class="menu-item"><a href="" class="link">Преимущества</a></div>
             <div class="delimiter">•</div>
-            <div class="menu-item"><a href="/flats" class="link">Планировки</a></div>
+            <div class="menu-item"><a href="/flats" class="link">Квартиры</a></div>
         </nav>
     </header>
 @endsection

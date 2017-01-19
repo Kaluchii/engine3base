@@ -1,17 +1,13 @@
 <?php
 
 return [
-    'fields'=>
-        [
-            'seotitle',
-            'seodescription',
-            'seokeywords'
+    'fields'=> [
+        'seo_title',
+        'seo_description',
+        'seo_keywords',
+        'seo_text'
         ],
-    'owners'=>
-        [
-            'group_bird_type',
-            'group_bird_area',
-            'group_bird_class',
-            'block_birds'
+    'owners'=> [
+        'head_slider'
         ]
 ];
