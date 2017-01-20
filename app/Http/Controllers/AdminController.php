@@ -17,6 +17,8 @@ class AdminController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
+        $this->extract->tuneSelection('slider')->sortBy('id','DESC');
+        $this->extract->tuneSelection('place')->sortBy('id','DESC');
     }
 
 
@@ -64,6 +66,12 @@ class AdminController extends Controller
         $flat_item = $this->extract->getGroupItem('flat', $id);
         return view('back.groups.flat.flat', [
            'item' => $flat_item
+        ]);
+    }
+    public function getGalleryItem( $id ){
+        $gallery_type_item = $this->extract->getGroupItem('gallery_type', $id);
+        return view('back.groups.gallery_type.gallery_type', [
+           'item' => $gallery_type_item
         ]);
     }
 }

@@ -21,7 +21,7 @@ class GroupItemController extends Controller
     public function newRow(Request $request){
         $data = $request->all();
         try{
-            $new_item = $this->init->init($data['blockname'], [$data['fieldname'] => $data['value']]);
+            $new_item = $this->init->init($data['blockname'], [$data['fieldname'] => $data['value'], 'superior' => $data['superior']]);
 
 
             $view = view('back.groups.'.$data['blockname'].'.'.$data['blockname'].'_row' , [
@@ -38,7 +38,7 @@ class GroupItemController extends Controller
     public function newBox(Request $request){
         $data = $request->all();
         try{
-            $new_item = $this->init->init($data['blockname'], []);
+            $new_item = $this->init->init($data['blockname'], [ 'superior' => $data['superior'] ] );
 
 
             $view = view('back.groups.'.$data['blockname'].'.'.$data['blockname'].'_box' , [

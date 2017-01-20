@@ -28,12 +28,13 @@ Route::group(['prefix' => 'adm'], function(){
     Route::get('/all',              'AdminController@getAll');
     Route::get('/slider',           'AdminController@getSlider');
 
-    Route::get('/flats',            'AdminController@getFlats');
-    Route::get('/flats/{id}',       'AdminController@getFlatsItem');
+    Route::get('/flats_main',       'AdminController@getFlats');
+    Route::get('/flats_main/{id}',  'AdminController@getFlatsItem');
 
     Route::get('/interest',         'AdminController@getInterest');
     Route::get('/map',              'AdminController@getMap');
     Route::get('/gallery',          'AdminController@getGallery');
+    Route::get('/gallery/{id}',     'AdminController@getGalleryItem');
 
 
 

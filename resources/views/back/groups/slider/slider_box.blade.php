@@ -1,13 +1,13 @@
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Сотрудник {{$item->sorter_field}}</h3>
+        <h3 class="box-title">Слайд {{$item->sorter_field}}</h3>
         <button type="submit" class="btn btn-primary pull-right remove-flat-item" data-id="{{$item->id_field}}"
                 data-block="slider">Удалить</button>
     </div>
     <div class="box-body">
 
         <div class="form-group">
-            <label>Картинка</label>
+            <label>Изображение</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">

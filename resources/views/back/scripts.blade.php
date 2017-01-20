@@ -1,14 +1,15 @@
 @section('scripts')
+    {{--<script src="/admin/js/lib/jquery.min.js"></script>--}}
+    <script src="/admin/js/lib/lodash.min.js"></script>
     <script src="/admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
     <script src="/admin/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="/admin/plugins/select2/select2.full.min.js"></script>
     <script src="/admin/plugins/slimScroll/jquery.slimscroll.js"></script>
     <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+
     <script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="/admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
-    <script src="/admin/js/lib/jquery.min.js"></script>
-    <script src="/admin/js/lib/lodash.min.js"></script>
 
 
     <link rel="stylesheet" href="/admin/js/widgets/image/fileinput.css">

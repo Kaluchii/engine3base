@@ -11,7 +11,7 @@
                 <h3 class="box-title">
                     Квартиры
                 </h3>
-                <button type="button" class="btn btn-primary pull-right add-group-item">Добавить</button>
+                <button type="button" data-parent="0" class="btn btn-primary pull-right add-group-item">Добавить</button>
                 <div class="col-xs-5 pull-right">
                     <input type="text" class="form-control add-item"
                            data-name="flat_name"

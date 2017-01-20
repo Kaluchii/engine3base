@@ -6,7 +6,7 @@
          data-block="slider">
         <div class="box-header with-border">
             <h3 class="box-title"> Главный слайдер </h3>
-            <button type="submit" class="btn btn-primary pull-right add-flat-item">Добавить</button>
+            <button type="submit" data-parent="0" class="btn btn-primary pull-right add-flat-item">Добавить</button>
         </div>
         <div class="box-body">
 

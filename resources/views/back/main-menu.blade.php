@@ -1,14 +1,12 @@
 @section('main-menu')
     <section class="sidebar">
         <ul class="sidebar-menu">
-            <li class="header">Навигация</li>
-
+            <li class="header">Главная страница</li>
             <li>
                 <a href="/adm/all">
                     <i class="fa fa-globe"></i> <span>Общие настройки</span>
                 </a>
             </li>
-
             <li>
                 <a href="/adm/slider">
                     <i class="fa fa-image"></i> <span>Главный слайдер</span>
@@ -20,8 +18,8 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/flats">
-                    <i class="fa fa-home"></i> <span>Квартиры</span>
+                <a href="/adm/flats_main">
+                    <i class="fa fa-home"></i> <span>Квартиры на главной</span>
                 </a>
             </li>
             <li>
@@ -34,6 +32,7 @@
                     <i class="fa fa-map-marker"></i> <span>Карта</span>
                 </a>
             </li>
+            <li class="header">Квартиры</li>
 
 
             {{--<li>--}}

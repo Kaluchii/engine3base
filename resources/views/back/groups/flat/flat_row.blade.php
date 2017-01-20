@@ -3,7 +3,7 @@
 
     {{-- Название  --}}
     <td class="sorting_1">
-        <a href="flats/{{$item->id_field}}" class="">{{$item->flat_name_field}}</a>
+        <a href="flats_main/{{$item->id_field}}" class="">{{$item->flat_name_field}}</a>
     </td>
 
     {{-- Дата последнего редактирования --}}
@@ -13,7 +13,7 @@
     <td data-order="{{$item->show_field}}">
         <select class="form-control group-show"
                 data-id="{{$item->id_field}}"
-                data-block="slider"
+                data-block="flat"
                 data-name="show">
             @if($item->show_field)
                 <option value="false">Не опубликовано</option>
@@ -29,7 +29,7 @@
     <td data-order="{{$item->sorter_field}}">
         <input type="number" class="form-control group-sorter"
                data-id="{{$item->id_field}}"
-               data-block="slider"
+               data-block="flat"
                data-name="sorter"
                value="{{$item->sorter_field}}">
     </td>
