@@ -74,4 +74,16 @@ class AdminController extends Controller
            'item' => $gallery_type_item
         ]);
     }
+    public function getMarkerCategory( $id ){
+        $markerCategory_item = $this->extract->getGroupItem('marker_category', $id);
+        return view('back.groups.marker_category.marker_category', [
+            'item' => $markerCategory_item
+        ]);
+    }
+    public function getMarkerSubCategory( $rub, $id ){
+        $institution_item = $this->extract->getGroupItem('institution', $id);
+        return view('back.groups.institution.institution', [
+            'item' => $institution_item
+        ]);
+    }
 }

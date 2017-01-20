@@ -1,7 +1,7 @@
 @extends('back.layout')
 @section('content')
 
-    @include('back.content-top', ['title' => 'Карта'])
+    @include('back.content-top', ['title' => 'Категория меток'])
 
 
     <div class="row">
@@ -9,13 +9,13 @@
             <div class="box table-widget">
                 <div class="box-header with-border">
                     <h3 class="box-title">
-                        Категории меток
+                        Подкатегории меток (заведения)
                     </h3>
-                    <button type="button" data-parent="0" class="btn btn-primary pull-right add-group-item">Добавить</button>
+                    <button type="button" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-group-item">Добавить</button>
                     <div class="col-xs-5 pull-right">
                         <input type="text" class="form-control add-item"
-                               data-name="category_name"
-                               data-block="marker_category"
+                               data-name="title"
+                               data-block="institution"
                                placeholder="Название элемента"
                         >
                     </div>
@@ -24,7 +24,7 @@
                 <div class="box-body">
                     <table class="table table-bordered table-hover dataTable table-widget-selector" role="grid"
                            aria-describedby="example2_info"
-                           data-block="map_block">
+                           data-block="marker_category">
                         <thead>
                         <tr role="row">
                             <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1"
@@ -42,8 +42,8 @@
                         </thead>
                         <tbody>
 
-                        @foreach($map_block->marker_category_group as $item)
-                            @include('back.groups.marker_category.marker_category_row',['item' => $item])
+                        @foreach($item->institution_group as $institution_item)
+                            @include('back.groups.institution.institution_row',['item' => $institution_item])
                         @endforeach
 
                         </tbody>

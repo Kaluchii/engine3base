@@ -51,7 +51,7 @@ return [
                 'marker_category' => ['superior']
             ],
             'marker' => [
-                'string' => ['lon','lat','title'],
+                'string' => ['lon','lat','label'],
                 'institution' => ['superior']
             ]
         ]
