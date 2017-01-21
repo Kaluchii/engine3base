@@ -3,6 +3,37 @@
 
     @include('back.content-top', ['title' => 'Категория меток'])
 
+    <div class="box box box-info">
+
+        <div class="box-header with-border">
+            <h3 class="box-title">Поля для редактирования</h3>
+        </div>
+
+
+        <div class="box-body">
+            <div class="form-group">
+                <label>Название категории</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->category_name_field}}"
+                       data-name="category_name"
+                       data-type="string"
+                       data-block="marker_category"
+                       data-id="{{$item->id_field}}">
+            </div>
+            <div class="form-group">
+                <label>Идентификатор слайдера категории (на латинице)</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->category_id_field}}"
+                       data-name="category_id"
+                       data-type="string"
+                       data-block="marker_category"
+                       data-id="{{$item->id_field}}">
+            </div>
+        </div>
+    </div>
+
 
     <div class="row">
         <div class="col-xs-12">

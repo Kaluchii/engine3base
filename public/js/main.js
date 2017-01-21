@@ -78,6 +78,9 @@ $(document).ready(function () {
         var fotoramaT = $fotoramaTop.data('fotorama');
 
 
+        $('.nav-item:first-child .link').click();
+
+        /*var firstID =  $('.gallery-nav .nav-item:first').attr('id');
         // Инициализация слайдера
         // 1. Initialize fotorama manually.
         var $fotoramaDiv = $('#facade').fotorama({
@@ -100,7 +103,7 @@ $(document).ready(function () {
             fotoramaT.setOptions({
                 arrows: false
             });
-        }
+        }*/
     });
 
 
@@ -125,15 +128,4 @@ $(document).ready(function () {
         },
         midClick: true
     });
-
-    //==== Изменение размера фоторамы при ресайзе
-    /*$(window).on('load resize', function () {
-        if ($(window).width() > 768) {
-            /!*$('.fotorama__img').addClass('fotorama_desctop_img');*!/
-            $('.fotorama__stage').addClass('fotorama_desctop');
-            $('.fotorama__img').style = 'top : calc(50% - ' + $('.fotorama__img').height()/2 + ') !important';
-        } else {
-            $('.fotorama__stage').removeClass('fotorama_desctop');
-        }
-    });*/
 });

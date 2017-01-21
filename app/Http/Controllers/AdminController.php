@@ -19,6 +19,8 @@ class AdminController extends Controller
         $this->extract = $ext;
         $this->extract->tuneSelection('slider')->sortBy('id','DESC');
         $this->extract->tuneSelection('place')->sortBy('id','DESC');
+        $this->extract->tuneSelection('slider_from')->sortBy('id','DESC');
+        $this->extract->tuneSelection('marker')->sortBy('id','DESC');
     }
 
 
@@ -44,6 +46,12 @@ class AdminController extends Controller
             'gallery_block' => $gallery
         ]);
     }
+    public function getFlats(){
+        $flats = $this->extract->getBlock('flats_block');
+        return view('back.blocks.flats_block', [
+            'flats_block' => $flats
+        ]);
+    }
     public function getInterest(){
         $interest = $this->extract->getBlock('interest_place');
         return view('back.blocks.interest_place', [
@@ -54,12 +62,6 @@ class AdminController extends Controller
         $map = $this->extract->getBlock('map_block');
         return view('back.blocks.map_block', [
             'map_block' => $map
-        ]);
-    }
-    public function getFlats(){
-        $flats = $this->extract->getBlock('flats_block');
-        return view('back.blocks.flats_block', [
-            'flats_block' => $flats
         ]);
     }
     public function getFlatsItem( $id ){

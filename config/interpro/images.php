@@ -15,6 +15,9 @@ return [
     ],
     'place.place_photo' => [
         'resizes' => ['preview','place']
+    ],
+    'institution.marker_icon' => [
+        'resizes' => ['preview']
     ]
 
 ];

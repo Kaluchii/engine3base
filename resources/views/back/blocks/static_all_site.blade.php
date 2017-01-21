@@ -105,7 +105,22 @@
                        data-block="static_all_site"
                        data-id="0">
             </div>
-
+            <div class="form-group">
+                <label>Метрики (script)</label>
+                <textarea class="form-control text"
+                          data-name="metrik_script"
+                          data-type="text"
+                          data-block="static_all_site"
+                          data-id="0">{{$static_all_site->metrik_script_field}}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Метрики (noscript)</label>
+                <textarea class="form-control text"
+                          data-name="metrik_noscript"
+                          data-type="text"
+                          data-block="static_all_site"
+                          data-id="0">{{$static_all_site->metrik_noscript_field}}</textarea>
+            </div>
 
         </div>
     </div>

@@ -1,10 +1,9 @@
 @include('front.scripts')
 @include('front.styles')
-@include('front.metriks')
 @include('front.header')
 @include('front.footer')
 
-        <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,16 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/gif">
     @yield('styles')
+    {{$static->metrik_script_field}}
     @yield('meta')
 </head>
 <body>
+    {{$static->metrik_noscript_field}}
     @yield('header')
     @yield('content')
     @yield('footer')
 </body>
 
 @yield('scripts')
-@yield('metriks')
 
 @include('front.popups.question')
 @include('front.popups.thank')

@@ -89,7 +89,7 @@
   .gallery-images {
     margin-top: 35px;
     height: 100%;
-    .fotorama:not(:last-child) {
+    .fotorama:not(:first-child) {
       display: none;
     }
     .img-text-wrap {
@@ -104,6 +104,9 @@
         color: #ffffff;
         text-align: center;
         z-index: 1;
+        &:empty {
+          display: none;
+        }
       }
     }
   }
@@ -491,5 +494,9 @@
     }
   }
 }
-
+.delimiter {
+  &:last-child {
+    display: none;
+  }
+}
 /*Стили для Фоторамы   calc(675px - 100% - 337px);*/

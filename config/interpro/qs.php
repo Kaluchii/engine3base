@@ -4,7 +4,8 @@ return [
 
     'static_all_site' => [
         'string' => ['phone','copyright','vk','inst','fb'],
-        'image'  => ['logo']
+        'image'  => ['logo'],
+        'text'   => ['metrik_script', 'metrik_noscript']
     ],
     'head_slider' => [
         'imageset' => ['slider' => 'slide'],
@@ -13,7 +14,7 @@ return [
     'gallery_block' => [
         'groups' => [
             'gallery_type' => [
-                'string' => ['gall_name', 'gall_id'],
+                'string' => ['gall_name'],
             ],
             'slider_from' => [
                 'image' => ['slide'],
@@ -55,5 +56,5 @@ return [
                 'institution' => ['superior']
             ]
         ]
-    ]
+    ],
 ];
