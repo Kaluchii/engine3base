@@ -68,7 +68,8 @@ var eventManager = (function(){
         fileError:      function( msg){ Status.add('sendFileError', msg)    },
         removeError:    function( msg){ Status.add('removeError',   msg)    },
         saveError:      function( msg){ Status.add('saveError',     msg)    },
-        newError:       function( msg){ Status.add('newError',      msg)    }
+        newError:       function( msg){ Status.add('newError',      msg)    },
+        addError:       function ( ) { Status.add('addError')               }
     };
 
     return{

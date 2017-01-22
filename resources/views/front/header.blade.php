@@ -12,13 +12,13 @@
             </div>
         </div>
         <nav class="menu">
-            <div class="menu-item active"><a href="/" class="link">О комплексе</a></div>
+            {{--<div class="menu-item active"><a href="/" class="link">О комплексе</a></div>
             <div class="delimiter">•</div>
             <div class="menu-item"><a href="" class="link">Расположение</a></div>
             <div class="delimiter">•</div>
             <div class="menu-item"><a href="" class="link">Преимущества</a></div>
             <div class="delimiter">•</div>
-            <div class="menu-item"><a href="/flats" class="link">Квартиры</a></div>
+            <div class="menu-item"><a href="/flats" class="link">Квартиры</a></div>--}}
         </nav>
     </header>
 @endsection

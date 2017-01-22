@@ -81,21 +81,25 @@ var sourceMark = {
             <h2 class="title">Галерея комплекса</h2>
             <div class="gallery-nav">
                 @foreach($gallery->gallery_type_group as $type)
-                    <div class="nav-item" id="#{{$type->id_field}}"><a class="link">{{$type->gall_name_field}}</a></div>
-                    <div class="delimiter">•</div>
+                    @if($type->show_field == 1)
+                        <div class="nav-item" id="#{{$type->id_field}}"><a class="link">{{$type->gall_name_field}}</a></div>
+                        <div class="delimiter">•</div>
+                    @endif
                 @endforeach
             </div>
             <div class="gallery-images">
                 @foreach($gallery->gallery_type_group as $type_v)
-                    <div class="fotorama js_gallery_fotorama" id="{{$type_v->id_field}}" data-auto="false" data-nav="thumbs"
-                         data-thumbmargin="10"
-                         data-thumbwidth="100" data-thumbheight="70" data-transition="crossfade">
-                        @foreach($type_v->slider_from_group as $gal_slide)
-                            <div data-img="{{$gal_slide->slide_field->link}}" data-thumb="{{$gal_slide->slide_field->link}}">
-                                <div class="img-text-wrap"><p>{!! $gal_slide->slide_text_field !!}</p></div>
-                            </div>
-                        @endforeach
-                    </div>
+                    @if($type_v->show_field == 1)
+                        <div class="fotorama js_gallery_fotorama" id="{{$type_v->id_field}}" data-auto="false" data-nav="thumbs"
+                             data-thumbmargin="10"
+                             data-thumbwidth="100" data-thumbheight="70" data-transition="crossfade">
+                            @foreach($type_v->slider_from_group as $gal_slide)
+                                <div data-img="{{$gal_slide->slide_field->link}}" data-thumb="{{$gal_slide->slide_field->link}}">
+                                    <div class="img-text-wrap"><p>{!! $gal_slide->slide_text_field !!}</p></div>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
                 @endforeach
             </div>
             <p class="img-count"><span class="js_how">1</span> из <span class="js_how_many"></span></p>
@@ -104,9 +108,9 @@ var sourceMark = {
     <div class="more-news">
         <h3 class="title">Больше фотографий и новостей</h3>
         <div class="social-buttons">
-            <a href="{{$static->fb_field}}" class="soc-button fb"></a>
-            <a href="{{$static->inst_field}}" class="soc-button inst"></a>
-            <a href="{{$static->vk_field}}" class="soc-button vk"></a>
+            <a href="{{$static->fb_field}}" rel="nofollow" target="_blank" class="soc-button fb"></a>
+            <a href="{{$static->inst_field}}" rel="nofollow" target="_blank" class="soc-button inst"></a>
+            <a href="{{$static->vk_field}}" rel="nofollow" target="_blank" class="soc-button vk"></a>
         </div>
     </div>
     <div class="wrapper">
@@ -116,8 +120,8 @@ var sourceMark = {
                 <p class="clarification">Современная просторная планировка позволяет выстроить все так, как вам будет
                     удобно.</p>
                 <div class="price">
-                    <p class="metr">цена за м² сегодня</p>
-                    <p class="sum">440 000 тг 1200 $</p>
+                    <p class="metr">цена за м²<br>сегодня</p>
+                    <p class="sum">440 000 тг<br>1200 $</p>
                 </div>
             </div>
             <div class="panorams">
@@ -128,7 +132,8 @@ var sourceMark = {
                                 <img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">
                             </div>
                             <p class="link-wrap">
-                                <a href="" class="link">{{$flat->flat_name_field}}</a>
+                                {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}
+                                <span class="flat_name">{{$flat->flat_name_field}}</span>
                             </p>
                             <p class="flat-size">Площадь от {{$flat->min_area_field}} до {{$flat->max_area_field}} м<sup>2</sup></p>
                             <div class="flat-price">от {{$flat->cost_field}} млн. тенге</div>

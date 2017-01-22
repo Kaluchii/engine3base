@@ -37,10 +37,10 @@ var Status = (function () {
       },
       sendFileError: { title: 'Ошибка при загрузки изображения', message: '', type: 'warning'},
 
-      ajaxFail: { title: 'Ошибка при отправке данных на сервер', message: '', type: 'fail'}
-
-
+      ajaxFail: { title: 'Ошибка при отправке данных на сервер', message: '', type: 'fail'},
+      addError : {title: 'Введите название элемента', message: '', type: 'fail'}
     };
+
     function makeTemplate( type, msg ){
         msg = msg || statusText[type].message;
         _template =

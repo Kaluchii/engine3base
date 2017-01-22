@@ -30,6 +30,9 @@ var table = (function () {
 
             //$this.add( '<tr role="row" class="odd"><td class="sorting_1"><a href="#" class="">'+new_name.val()+'</a></td><td>10.05.16</td><td><select class="form-control"><option>Не опубликовано</option><option>Опубликовано</option></select></td><td>1</td><td><button type="button" class="btn btn-block btn-primary">Удалить</button></td></tr>');
             new_name.val('');
+        }else{
+            new_name.closest('.col-xs-5').addClass('has-error');
+            eventManager.call('addError');
         }
     }
 
@@ -96,7 +99,7 @@ var table = (function () {
             });
             $(_widget_types.add.input).on('keydown',function(e){
                 parent_id = $(_widget_types.add.button).data('parent');
-
+                $(_widget_types.add.input).closest('.col-xs-5').removeClass('has-error');
                 if(e.keyCode == 13){
                     addItem( parent_id );
                 }
