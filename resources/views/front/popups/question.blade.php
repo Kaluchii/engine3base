@@ -9,7 +9,7 @@
                     <label  class="row-name">
                         Ваше Имя
                     </label>
-                    <input type="text" class="popup-input" data-field-name="name" data-field-type="string" placeholder="Имя">
+                    <input type="text" class="popup-input" data-name="ask_name" placeholder="Имя">
 
                 </div>
             </div>
@@ -18,7 +18,7 @@
                     <label  class="row-name">
                         Ваша почта <span class="gray">для ответа</span>
                     </label>
-                    <input type="text" class="popup-input" data-field-name="mail" data-field-type="string" placeholder="Эл. почта">
+                    <input type="text" class="popup-input" data-name="ask_mail" placeholder="Эл. почта">
 
                 </div>
             </div>
@@ -27,7 +27,7 @@
                     <label  class="row-name">
                         Сообщение
                     </label>
-                    <textarea type="text" class="popup-input" data-field-name="question" data-field-type="text" placeholder="Вопрос или комментарий"></textarea>
+                    <textarea type="text" class="popup-input" data-name="ask_question" placeholder="Вопрос или комментарий"></textarea>
                 </div>
             </div>
             <div class="row button-row">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-1-2">
                     <span  class="row-name">
-                        <button class="send-form">Отправить</button>
+                        <button class="send-form" data-form="ask">Отправить</button>
                     </span>
                 </div>
             </div>

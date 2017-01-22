@@ -16,11 +16,12 @@ Route::get('/flats', function () {
     return view('front.flats.flat');
 });
 
+Route::post('/feedback/mail', 'MailController@send');
 
 
 
-
-Route::group(['prefix' => 'adm'], function(){
+Route::auth();
+Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
     Route::get('/',                 'AdminController@getIndex');
     Route::get('/all',              'AdminController@getAll');

@@ -41,6 +41,12 @@ return [
                 'int' => ['number1', 'number2']
             ]
         ],
-        'form2' => []
+        'form2' => [],
+        'ask' => [
+            'form_fields' => [
+                'string' => ['ask_name', 'ask_mail'],
+                'text'   => ['ask_question']
+            ]
+        ]
     ]
 ];
