@@ -43,8 +43,6 @@ $(document).ready(function () {
             // 2. Get the API object.
             var fotorama = $fotoramaDiv.data('fotorama');
 
-            // 3. Inspect it in console.
-            console.log(fotorama);
             $('.js_how').text(fotorama.activeFrame.i);
 
             $('.js_how_many').text(fotorama.size);
@@ -128,4 +126,44 @@ $(document).ready(function () {
         },
         midClick: true
     });
+
+
+    //=====================================
+    window.SpriteSpin.extendApi({
+        stopAnimation: function(){
+            this.data.animate = false;
+            SpriteSpin.setAnimation(this.data);
+        },
+        startAnimation: function(){
+            this.data.animate = true;
+            SpriteSpin.setAnimation(this.data);
+        }
+    });
+
+    var panoramaAPI = {};
+    $('.panoram-item-wrap ').each(function () {
+        id = $(this).attr('id');
+        $this = $(this);
+        panoramaAPI[id] = $this.find('.spritespin').spritespin({
+            source: $this.data('img'),
+            // this sets the width of the display. The panorama image must be larger
+            width: 1300,
+            height: 257,
+            animate: false,
+            // select the modules
+            mods: [
+                // the panorama display module
+                'panorama'
+            ]
+        }).spritespin('api');
+
+    }).hover(
+        function () {
+            // hover
+            panoramaAPI[ $(this).attr('id') ].startAnimation();
+        },
+        function () {
+            // off hover
+            panoramaAPI[ $(this).attr('id') ].stopAnimation();
+        })
 });

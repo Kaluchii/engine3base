@@ -126,10 +126,11 @@ var sourceMark = {
             </div>
             <div class="panorams">
                 @foreach($flats->flat_group as $flat)
-                    <div class="panoram-item-wrap">
+                    <div class="panoram-item-wrap" id="{{$flat->id_field}}" data-img="{{$flat->panorame_field->link}}">
                         <div class="panoram-item">
                             <div class="panorama">
-                                <img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">
+                                <div class="spritespin" ></div>
+                                {{--<img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">--}}
                             </div>
                             <p class="link-wrap">
                                 {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}
@@ -139,6 +140,7 @@ var sourceMark = {
                             <div class="flat-price">от {{$flat->cost_field}} млн. тенге</div>
                             <p class="flat-description">{{$flat->description_field}}</p>
                         </div>
+
                     </div>
                 @endforeach
             </div>
