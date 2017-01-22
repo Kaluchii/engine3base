@@ -1,6 +1,6 @@
 @extends('back.layout')
 @section('content')
-    @include('back.content-top', ['title' => 'Редактирование категории галереи'])
+    @include('back.content-top', ['title' => 'Редактирование слайдера'])
 
     <div class="box box box-info">
 

@@ -135,7 +135,7 @@ var sourceMark = {
                                 {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}
                                 <span class="flat_name">{{$flat->flat_name_field}}</span>
                             </p>
-                            <p class="flat-size">Площадь от {{$flat->min_area_field}} до {{$flat->max_area_field}} м<sup>2</sup></p>
+                            <p class="flat-size">Площадь от {{str_replace('.', ',', $flat->min_area_field)}} до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
                             <div class="flat-price">от {{$flat->cost_field}} млн. тенге</div>
                             <p class="flat-description">{{$flat->description_field}}</p>
                         </div>
