@@ -26,13 +26,13 @@
     </td>--}}
 
     {{-- Сортировака --}}
-    {{--<td data-order="{{$item->sorter_field}}">
+    <td data-order="{{$item->sorter_field}}">
         <input type="number" class="form-control group-sorter"
                data-id="{{$item->id_field}}"
                data-block="marker_category"
                data-name="sorter"
                value="{{$item->sorter_field}}">
-    </td>--}}
+    </td>
 
     {{-- Удаления  --}}
     <td>
