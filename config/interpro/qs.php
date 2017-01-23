@@ -45,7 +45,7 @@ return [
     'map_block' => [
         'groups' => [
             'marker_category' => [
-                'string' => ['category_name', 'category_id'],
+                'string' => ['category_name'],
             ],
             'institution' => [
                 'image' => ['marker_icon'],

@@ -32,6 +32,11 @@
                     <i class="fa fa-map-marker"></i> <span>Карта</span>
                 </a>
             </li>
+            <li>
+                <a href="/adm/main_seo">
+                    <i class="fa fa-chrome"></i> <span>СЕО главной страницы</span>
+                </a>
+            </li>
             <li class="header">Квартиры</li>
 
 

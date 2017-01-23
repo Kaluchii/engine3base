@@ -132,21 +132,21 @@
         margin-left: 20px;
       }
       &.fb {
-        &:hover {
+        /*&:hover {
           background-position: 240px 0;
-        }
+        }*/
       }
       &.inst {
         background-position: 192px 0;
-        &:hover {
+        /*&:hover {
           background-position: 144px 0;
-        }
+        }*/
       }
       &.vk {
         background-position: 96px 0;
-        &:hover {
+        /*&:hover {
           background-position: 48px 0;
-        }
+        }*/
       }
     }
   }
@@ -234,11 +234,24 @@
         .panorama {
           position: relative;
           overflow: hidden;
+          width: 300px;
           /*&::before {
             content: @360;
             transition: opacity 400ms linear;
             position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+          }
+          &::after {
+            content: @frame;
+            position: absolute;
+            left: 0;
+            top: 0;
           }*/
+          img {
+            vertical-align: bottom;
+          }
         }
         .link-wrap {
           margin-top: 15px;

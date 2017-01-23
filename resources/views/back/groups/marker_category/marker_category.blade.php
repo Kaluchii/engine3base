@@ -21,16 +21,6 @@
                        data-block="marker_category"
                        data-id="{{$item->id_field}}">
             </div>
-            <div class="form-group">
-                <label>Идентификатор слайдера категории (на латинице)</label>
-                <input class="form-control string"
-                       type="text" placeholder=""
-                       value="{{$item->category_id_field}}"
-                       data-name="category_id"
-                       data-type="string"
-                       data-block="marker_category"
-                       data-id="{{$item->id_field}}">
-            </div>
         </div>
     </div>
 
@@ -63,10 +53,10 @@
                                 aria-label="">Название</th>
                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1"
                                 colspan="1" aria-label="">Дата</th>
-                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1"
+                            {{--<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1"
                                 colspan="1" aria-label="">Статус публикации</th>
                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1"
-                                colspan="1" aria-label="">Порядок выдачи</th>
+                                colspan="1" aria-label="">Порядок выдачи</th>--}}
                             <th  tabindex="0"  rowspan="1"
                                  colspan="1" aria-label="">Удаление</th>
                         </tr>

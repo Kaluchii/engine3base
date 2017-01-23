@@ -78,30 +78,6 @@ $(document).ready(function () {
 
         $('.nav-item:first-child .link').click();
 
-        /*var firstID =  $('.gallery-nav .nav-item:first').attr('id');
-        // Инициализация слайдера
-        // 1. Initialize fotorama manually.
-        var $fotoramaDiv = $('#facade').fotorama({
-            navwidth: '90%'
-        });
-        $('#facade').on('fotorama:show', function (e, fotorama, extra) {
-            $('.js_how').text(fotorama.activeFrame.i);
-        });
-        // 2. Get the API object.
-        var fotorama = $fotoramaDiv.data('fotorama');
-
-        // 3. Inspect it in console.
-        console.log(fotorama);
-
-        $('.js_how_many').text(fotorama.size);
-        if (window.device.mobile() === true || window.device.tablet() === true) {
-            fotorama.setOptions({
-                arrows: false
-            });
-            fotoramaT.setOptions({
-                arrows: false
-            });
-        }*/
     });
 
 

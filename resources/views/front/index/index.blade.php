@@ -5,8 +5,8 @@
 <script type="text/javascript">
 var sourceMark = {
     @foreach($map->marker_category_group as $m_category)
-        {{$m_category->category_id_field}}: {
-        slug: '{{$m_category->category_id_field}}',
+        {{$m_category->id_field}}: {
+        slug: '{{$m_category->id_field}}',
         @foreach($m_category->institution_group as $institution)
             {{$institution->id_field}}: {
                 icon: '{{$institution->marker_icon_field->link}}',
@@ -108,9 +108,9 @@ var sourceMark = {
     <div class="more-news">
         <h3 class="title">Больше фотографий и новостей</h3>
         <div class="social-buttons">
-            <a href="{{$static->fb_field}}" rel="nofollow" target="_blank" class="soc-button fb"></a>
-            <a href="{{$static->inst_field}}" rel="nofollow" target="_blank" class="soc-button inst"></a>
-            <a href="{{$static->vk_field}}" rel="nofollow" target="_blank" class="soc-button vk"></a>
+            <a {{--href="{{$static->fb_field}}"--}} rel="nofollow" target="_blank" class="soc-button fb"></a>
+            <a {{--href="{{$static->inst_field}}"--}} rel="nofollow" target="_blank" class="soc-button inst"></a>
+            <a {{--href="{{$static->vk_field}}"--}} rel="nofollow" target="_blank" class="soc-button vk"></a>
         </div>
     </div>
     <div class="wrapper">
@@ -173,7 +173,7 @@ var sourceMark = {
         <h2 class="title">Удобное расположение</h2>
         <div class="map-nav">
             @foreach($map->marker_category_group as $category)
-                <div class="map-nav-item"><a class="link" data-category="{{$category->category_id_field}}">{{$category->category_name_field}}</a></div>
+                <div class="map-nav-item"><a class="link" data-category="{{$category->id_field}}">{{$category->category_name_field}}</a></div>
                 <div class="delimiter">•</div>
             @endforeach
         </div>
@@ -206,5 +206,4 @@ var sourceMark = {
         <button class="send-button" href="#question" id="write">Написать письмо</button>
     </div>
 </section>
-@include('front.seotext', ['seo' => $slider->seo_text_field])
 @endsection

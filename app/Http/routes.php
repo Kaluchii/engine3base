@@ -39,6 +39,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
     Route::get('/gallery/{id}',     'AdminController@getGalleryItem');
 
 
+    Route::get('/main_seo',         'AdminController@getMainSeo');
+
+
 
     Route::get('/taxonomy', 'TestController@showTaxonomy');
 

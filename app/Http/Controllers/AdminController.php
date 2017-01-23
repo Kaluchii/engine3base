@@ -64,6 +64,12 @@ class AdminController extends Controller
             'map_block' => $map
         ]);
     }
+    public function getMainSeo(){
+        $seo = $this->extract->getBlock('head_slider');
+        return view('back.blocks.main_seo', [
+            'seo' => $seo
+        ]);
+    }
     public function getFlatsItem( $id ){
         $flat_item = $this->extract->getGroupItem('flat', $id);
         return view('back.groups.flat.flat', [
