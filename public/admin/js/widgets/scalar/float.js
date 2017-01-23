@@ -29,7 +29,12 @@ var float = (function () {
             };
 
             this.getField = function () {
-                return parseFloat($(this.elem).val(), 10);
+                if ( $(this.elem).val().indexOf(',') > 0){
+                    return parseFloat($(this.elem).val().replace(/[,]+/g, '.'), 10);
+                }else{
+                    return parseFloat($(this.elem).val(), 10);
+                }
+
             };
 
             this.set = function (value) {

@@ -39,7 +39,7 @@ var Model = (function () {
 
             var obj = data[block];
             obj.forEach(function(item_obj, i , obj ){
-                if( item.id  == id){
+                if( item_obj.id  == id){
                     haveItem = true;
                     item     = data[block][i];
                 }

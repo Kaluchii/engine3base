@@ -1,11 +1,16 @@
 $(document).ready(function () {
     DG.then(function () {
+       mainIcon = DG.icon({
+            iconUrl: '../img/EUR.png',
+            iconSize: [40, 60],
+            iconAnchor: [20, 60],
+        });
         map = DG.map('map', {
             center: [43.2595, 76.92738],
             zoom: 16,
             scrollWheelZoom: false,
         });
-        DG.marker([43.259815, 76.92738]).addTo(map);
+        DG.marker([43.259505, 76.92738], {icon: mainIcon, riseOnHover: true}).addTo(map);
         $('.map-nav-item:first-child .link').click();
     });
     var markersGroup;

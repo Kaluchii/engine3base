@@ -409,16 +409,16 @@
         },
         {
             "name": "interpro/imageaggr",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/imageaggr.git",
-                "reference": "5a3f18b2a5083efceaaa022faed87146ff59028a"
+                "reference": "81d1a02f1be2ff4fb57b31643d0508f0705a8595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/5a3f18b2a5083efceaaa022faed87146ff59028a",
-                "reference": "5a3f18b2a5083efceaaa022faed87146ff59028a",
+                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/81d1a02f1be2ff4fb57b31643d0508f0705a8595",
+                "reference": "81d1a02f1be2ff4fb57b31643d0508f0705a8595",
                 "shasum": ""
             },
             "require": {
@@ -453,20 +453,20 @@
             "keywords": [
                 "imageaggr"
             ],
-            "time": "2017-01-21 13:10:40"
+            "time": "2017-01-23 07:56:42"
         },
         {
             "name": "interpro/qsaggr",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/qsaggr.git",
-                "reference": "ef054fccc720c981178e0cc3b110481b5bb92d5a"
+                "reference": "f7c955499f28816cf535e1d2db60c76555c25ed1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/ef054fccc720c981178e0cc3b110481b5bb92d5a",
-                "reference": "ef054fccc720c981178e0cc3b110481b5bb92d5a",
+                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/f7c955499f28816cf535e1d2db60c76555c25ed1",
+                "reference": "f7c955499f28816cf535e1d2db60c76555c25ed1",
                 "shasum": ""
             },
             "require": {
@@ -500,7 +500,7 @@
             "keywords": [
                 "qsaggr"
             ],
-            "time": "2017-01-19 08:29:49"
+            "time": "2017-01-22 13:14:39"
         },
         {
             "name": "interpro/scalar",

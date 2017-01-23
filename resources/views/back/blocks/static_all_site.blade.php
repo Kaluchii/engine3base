@@ -76,7 +76,7 @@
             </div>
 
             <div class="form-group">
-                <label>Ссылка на "ВК"</label>
+                <label>Ссылка на ВК</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$static_all_site->vk_field}}"
@@ -86,7 +86,7 @@
                        data-id="0">
             </div>
             <div class="form-group">
-                <label>Ссылка на "Инстаграмм"</label>
+                <label>Ссылка на Инстаграмм</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$static_all_site->inst_field}}"
@@ -96,7 +96,7 @@
                        data-id="0">
             </div>
             <div class="form-group">
-                <label>Ссылка на "Фейсбук"</label>
+                <label>Ссылка на Фейсбук</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$static_all_site->fb_field}}"

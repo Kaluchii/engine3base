@@ -72,7 +72,7 @@
             </div>
 
             <div class="form-group">
-                <label>Площадь "от"</label>
+                <label>Минимальная площадь</label>
                 <input class="form-control float"
                        type="text" placeholder=""
                        value="{{$item->min_area_field}}"
@@ -83,7 +83,7 @@
             </div>
 
             <div class="form-group">
-                <label>Площадь "до"</label>
+                <label>Максимальная площадь</label>
                 <input class="form-control float"
                        type="text" placeholder=""
                        value="{{$item->max_area_field}}"
@@ -104,7 +104,7 @@
             </div>
 
             <div class="form-group">
-                <label>Текст описание</label>
+                <label>Текст описание (Появляется при наведении)</label>
                 <textarea class="form-control text"
                           data-name="description"
                           data-type="text"

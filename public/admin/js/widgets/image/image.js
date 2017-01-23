@@ -1,6 +1,6 @@
 var image = (function () {
     //Переменные по умолчанию, и внутренние переменные для работы
-
+    var  update_flag = false;
     var Constr = function (options) {
         if (options === undefined) {
             return {error: true, msg: 'Невозможно создать виджет'};
@@ -44,6 +44,7 @@ var image = (function () {
             });
             this.getFieldAlt = function(){
                 return {
+                    update_flag: update_flag,
                     alt: this.wrap.find('.form-control.alt-text').val()
                 };
             };
@@ -67,6 +68,7 @@ var image = (function () {
                     '</div>';
 
                 this.wrap.html(_template);
+                update_flag = true;
             };
 
 
