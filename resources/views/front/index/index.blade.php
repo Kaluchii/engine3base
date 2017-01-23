@@ -129,8 +129,8 @@ var sourceMark = {
                     <div class="panoram-item-wrap" id="{{$flat->id_field}}" data-img="{{$flat->panorame_field->link}}">
                         <div class="panoram-item">
                             <div class="panorama">
-                                <div class="spritespin" ></div>
-                                {{--<img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">--}}
+                                <div class="spritespin"></div>
+                                <img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">
                             </div>
                             <p class="link-wrap">
                                 {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}

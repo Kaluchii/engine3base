@@ -80,7 +80,7 @@
 
     lane              : 0,            // The initial sequence number to play
     frame             : 0,            // Initial (and current) frame number
-    frameTime         : 40,           // Time in ms between updates. 40 is exactly 25 FPS
+    frameTime         : 10,           // Time in ms between updates. 40 is exactly 25 FPS
     animate           : true,         // If true starts the animation on load
     reverse           : false,        // If true animation is played backward
     loop              : true,         // If true loops the animation

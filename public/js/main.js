@@ -129,7 +129,7 @@ $(document).ready(function () {
 
 
     //=====================================
-    window.SpriteSpin.extendApi({
+    /*window.SpriteSpin.extendApi({
         stopAnimation: function(){
             this.data.animate = false;
             SpriteSpin.setAnimation(this.data);
@@ -165,5 +165,5 @@ $(document).ready(function () {
         function () {
             // off hover
             panoramaAPI[ $(this).attr('id') ].stopAnimation();
-        })
+        })*/
 });
