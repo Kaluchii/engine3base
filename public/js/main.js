@@ -74,7 +74,11 @@ $(document).ready(function () {
         var $fotoramaTop = $('#fotoramaTop').fotorama();
         // 2. Get the API object.
         var fotoramaT = $fotoramaTop.data('fotorama');
-
+        if (window.device.mobile() === true || window.device.tablet() === true) {
+            fotoramaT.setOptions({
+                arrows: false
+            });
+        }
 
         $('.nav-item:first-child .link').click();
 
