@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'FrontController@getIndex');
-Route::get('/flats', function () {
-    return view('front.flats.flat');
-});
+Route::get('/',         'FrontController@getIndex');
+Route::get('/flats',    'FrontController@getFlats');
+
+
 
 Route::post('/feedback/mail', 'MailController@send');
 

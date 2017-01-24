@@ -264,16 +264,16 @@
         },
         {
             "name": "interpro/entrance",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/entrance.git",
-                "reference": "25e80d2a77efda322b400bd26060f4ec5749cc5f"
+                "reference": "a82b55d9021481ed414999ea5e9e1c237a18ee05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/entrance/zipball/25e80d2a77efda322b400bd26060f4ec5749cc5f",
-                "reference": "25e80d2a77efda322b400bd26060f4ec5749cc5f",
+                "url": "https://api.github.com/repos/intpro/entrance/zipball/a82b55d9021481ed414999ea5e9e1c237a18ee05",
+                "reference": "a82b55d9021481ed414999ea5e9e1c237a18ee05",
                 "shasum": ""
             },
             "require": {
@@ -311,20 +311,20 @@
             "keywords": [
                 "entrance"
             ],
-            "time": "2017-01-21 12:07:58"
+            "time": "2017-01-23 10:02:45"
         },
         {
             "name": "interpro/extractor",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/extractor.git",
-                "reference": "34efa8c43d2d2c531f8660a2fd2d6a3d7e4413a6"
+                "reference": "4e0e2f561e66e4c692f453ae044a73f4ede2407e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/extractor/zipball/34efa8c43d2d2c531f8660a2fd2d6a3d7e4413a6",
-                "reference": "34efa8c43d2d2c531f8660a2fd2d6a3d7e4413a6",
+                "url": "https://api.github.com/repos/intpro/extractor/zipball/4e0e2f561e66e4c692f453ae044a73f4ede2407e",
+                "reference": "4e0e2f561e66e4c692f453ae044a73f4ede2407e",
                 "shasum": ""
             },
             "require": {
@@ -357,7 +357,7 @@
             "keywords": [
                 "extractor"
             ],
-            "time": "2017-01-21 13:16:41"
+            "time": "2017-01-23 10:04:43"
         },
         {
             "name": "interpro/feedback",
@@ -504,16 +504,16 @@
         },
         {
             "name": "interpro/scalar",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/scalar.git",
-                "reference": "505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2"
+                "reference": "24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/scalar/zipball/505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2",
-                "reference": "505943a3c9d2ccf819ccbd02bc8f9aa9e6d2a6e2",
+                "url": "https://api.github.com/repos/intpro/scalar/zipball/24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3",
+                "reference": "24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3",
                 "shasum": ""
             },
             "require": {
@@ -547,7 +547,7 @@
             "keywords": [
                 "scalar"
             ],
-            "time": "2017-01-17 08:45:38"
+            "time": "2017-01-23 10:07:12"
         },
         {
             "name": "interpro/seo",

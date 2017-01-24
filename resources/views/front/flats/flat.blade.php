@@ -49,6 +49,18 @@
                     </div>
                 </div>
             </div>
+            <div class="layout-map">
+                <div class="layout-img"></div>
+                <div class="right-block">
+                    <div class="conditions"></div>
+                    <div class="legend"></div>
+                </div>
+            </div>
+            <div class="flat-description">
+                <div class="sheme"></div>
+                <div class="description"></div>
+                <div class="description"></div>
+            </div>
         </div>
         <div class="viewing">
             <h2 class="title">Записаться на просмотр</h2>

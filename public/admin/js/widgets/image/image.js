@@ -69,6 +69,7 @@ var image = (function () {
 
                 this.wrap.html(_template);
                 update_flag = true;
+                eventManager.call('updateWidget', $this.pos);
             };
 
 

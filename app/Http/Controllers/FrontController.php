@@ -40,4 +40,8 @@ class FrontController extends Controller
             'map' => $map,
         ]);
     }
+
+    public function getFlats(){
+        return view('front.flats.flat', []);
+    }
 }

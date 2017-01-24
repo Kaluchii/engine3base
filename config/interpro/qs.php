@@ -57,4 +57,10 @@ return [
             ]
         ]
     ],
+
+
+
+    'course' => [
+        'float' => ['dollar']
+    ]
 ];
