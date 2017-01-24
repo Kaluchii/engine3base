@@ -1,6 +1,6 @@
 .top-flat-navigation {
   background: @shadow no-repeat top center;
-  padding-top: 40px;
+  padding-top: 10px;
   position: relative;
   top: -50px;
   .room-count-row {
@@ -9,7 +9,7 @@
     justify-content: center;
     text-align: center;
     .room-count-item {
-      margin: 0 30px;
+      margin: 30px 30px 0;
       .link-wrap {
         display: inline-block;
         &.active {
@@ -28,6 +28,7 @@
     }
   }
   .layout-row {
+    padding: 0 20px;
     margin-top: 60px;
     position: relative;
     .price {
@@ -71,6 +72,103 @@
           }
         }
       }
+    }
+  }
+}
+
+.layout-map {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 65px;
+  .layout-img {
+    max-width: 760px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .right-block {
+    .flat-conditions {
+      width: 260px;
+      padding: 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #e7f6d5;
+      .conditions-item {
+        &:not(:first-child) {
+          .title {
+            margin-top: 30px;
+          }
+        }
+        .title {
+          font-family: @bold;
+          color: #333333;
+        }
+        .row {
+          margin-top: 10px;
+        }
+      }
+    }
+    .legend {
+      width: 260px;
+      background: #f7f5e9;
+      padding: 10px 20px 20px 25px;
+      margin-top: 30px;
+      font-size: 14px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      .designation {
+        position: relative;
+        padding-left: 35px;
+        &:not(:last-child) {
+          margin-top: 15px;
+        }
+        &::before {
+          position: absolute;
+          left: 0;
+          top: -1px;
+        }
+        &.ns {
+          &::before {
+            content: @grd_sq;
+          }
+        }
+        &.ms {
+          &::before {
+            content: @grl_sq;
+          }
+        }
+        &.ok {
+          &::before {
+            content: @blue_sq;
+          }
+        }
+        &.mu {
+          margin-top: 45px;
+          line-height: 1.5;
+          &::before {
+            content: @strock;
+            top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+.flat-description {
+  padding: 65px 100px 70px;
+  display: flex;
+  line-height: 1.6;
+  .scheme {
+    text-align: center;
+  }
+  .text-block {
+    margin-left: 140px;
+    min-width: 160px;
+    &:last-child {
+      margin-left: 80px;
     }
   }
 }

@@ -18,6 +18,9 @@ return [
     ],
     'institution.marker_icon' => [
         'resizes' => ['preview']
+    ],
+    'layout.scheme' => [
+        'resizes' => ['preview']
     ]
 
 ];

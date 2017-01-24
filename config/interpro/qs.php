@@ -59,8 +59,24 @@ return [
     ],
 
 
+    'flats_page' => [
+        'groups' => [
+            'dom_flat' => [
+                'string' => ['name'],
+                'float' => ['min_area', 'max_area'],
+            ],
+            'layout' => [
+                'string' => ['name', ],
+                'int' => ['min_cost', 'max_cost'],
+                'float' => ['min_area', 'max_area'],
+                'image' => ['scheme'],
+                'text' => ['facts', 'descr'],
+                'dom_flat' => ['superior']
+            ],
+        ]
+    ],
 
-    'course' => [
-        'float' => ['dollar']
+    'prices' => [
+        'float' => ['dollar', 'meter_cost']
     ]
 ];
