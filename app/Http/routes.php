@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/',         'FrontController@getIndex');
-Route::get('/flats',    'FrontController@getFlats');
-Route::get('/flats1/',    'FrontController@getFlats');
+Route::get('/',                              'FrontController@getIndex');
+Route::get('/flats/{flat?}/{layout?}',       'FrontController@getLayout');
+Route::get('/advantages',                    'FrontController@getAdvantages');
 
 
 

@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="layout-map">
-                <div class="layout-img"><img src="img/layout.png" alt=""></div>
+                <div class="layout-img"><img src="/img/layout.png" alt=""></div>
                 <div class="right-block">
                     <div class="flat-conditions">
                         <div class="conditions-item">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="flat-description">
-                <div class="scheme"><img src="img/e-block.png" alt="Схема комплекса Евразия"></div>
+                <div class="scheme"><img src="/img/e-block.png" alt="Схема комплекса Евразия"></div>
                 <div class="text-block">
                     <p>Доступна в блоках</p>
                     <p>6,7</p><br>

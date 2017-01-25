@@ -41,7 +41,10 @@ class FrontController extends Controller
         ]);
     }
 
-    public function getFlats(){
+    public function getLayout( $flat = null, $layout = null ){
+        $flats = $this->extract->getBlock('flats_page');
+        foreach ($flats as $flat) {
+        }
         return view('front.flats.flat', []);
     }
 }

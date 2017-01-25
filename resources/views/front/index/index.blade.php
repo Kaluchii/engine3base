@@ -37,45 +37,45 @@ var sourceMark = {
         <div class="conditions">
             <h2 class="title">Все условия для детей и взрослых</h2>
             <div class="condition-item">
-                <img src="img/01-bird.png" alt="Удобное расположение">
+                <img src="/img/01-bird.png" alt="Удобное расположение">
                 <p class="condition-title">Удобное расположение</p>
                 <p class="descr">«Евразия» находится в тихом центре Алматы, вдали от крупных автомагистралей и пробок.
                     Недалеко школы, парки и детские сады.</p>
             </div>
             <div class="condition-item">
-                <img src="img/02-ball.png" alt="Безопасный внутренний двор">
+                <img src="/img/02-ball.png" alt="Безопасный внутренний двор">
                 <p class="condition-title">Безопасный внутренний двор</p>
                 <p class="descr">Во двор, где играют дети, ограничен въезд автомобилей
                     и доступ посторонних.</p>
             </div>
             <div class="condition-item">
-                <img src="img/03-helm.png" alt="Усиленная сейсмостойкость">
+                <img src="/img/03-helm.png" alt="Усиленная сейсмостойкость">
                 <p class="condition-title">Усиленная сейсмостойкость</p>
                 <p class="descr">Мы тщательно соблюдали строительные нормативы и строили на совесть. 90% конструкции —
                     монолит. Сейсмостойкость выше 9 баллов.</p>
             </div>
             <div class="condition-item">
-                <img src="img/04-jeep.png" alt="Вместительный паркинг">
+                <img src="/img/04-jeep.png" alt="Вместительный паркинг">
                 <p class="condition-title">Вместительный паркинг</p>
                 <p class="descr">Для жильцов и гостей комплекса действуют охраняемые наземные и подземные парковки
                     площадью более 4 500 м².</p>
             </div>
             <div class="condition-item">
-                <img src="img/05-cups.png" alt="Собственная инфраструктура">
+                <img src="/img/05-cups.png" alt="Собственная инфраструктура">
                 <p class="condition-title">Собственная инфраструктура</p>
                 <p class="descr">На первых этажах откроются заведения и магазины, необходимые для удобства жильцов.</p>
             </div>
             <div class="condition-item">
-                <img src="img/06-coint.png" alt="Возможности для бизнеса">
+                <img src="/img/06-coint.png" alt="Возможности для бизнеса">
                 <p class="condition-title">Возможности для бизнеса</p>
                 <p class="descr">660 квартир с состоятельной аудиторией более 2 000 человек. Доступны коммерческие
                     площади от 240 до 10 000 м².</p>
             </div>
         </div>
         <div class="good-place-img">
-            <img class="row" src="img/good_place_row.png" alt="Евразия - хорошее место для семейной жизни">
-            <img class="row" src="img/place-for.png" alt="Евразия - хорошее место для семейной жизни">
-            <img class="flower" src="img/good_place_flower.png" alt="Кувшин с цветами и бабочками">
+            <img class="row" src="/img/good_place_row.png" alt="Евразия - хорошее место для семейной жизни">
+            <img class="row" src="/img/place-for.png" alt="Евразия - хорошее место для семейной жизни">
+            <img class="flower" src="/img/good_place_flower.png" alt="Кувшин с цветами и бабочками">
         </div>
         <div class="gallery">
             <h2 class="title">Галерея комплекса</h2>

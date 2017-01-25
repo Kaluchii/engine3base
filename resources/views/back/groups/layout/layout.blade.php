@@ -11,12 +11,22 @@
 
         <div class="box-body">
             <div class="form-group">
-                <label>Название квартиры</label>
+                <label>Название планировки</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$item->layout_name_field}}"
                        data-name="layout_name"
                        data-type="string"
+                       data-block="layout"
+                       data-id="{{$item->id_field}}">
+            </div>
+
+            <div class="form-group">
+                <label>Вид ссылки в адресной строке</label>
+                <input class="form-control slug string"
+                       type="text" placeholder=""
+                       value="{{$item->slug_field}}"
+                       data-name="slug"
                        data-block="layout"
                        data-id="{{$item->id_field}}">
             </div>
