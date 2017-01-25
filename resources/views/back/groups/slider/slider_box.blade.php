@@ -16,7 +16,7 @@
 
                             <div class="file-preview-frame">
                                 <div class="kv-file-content">
-                                    <img src="{{$item->slide_field->link}}" class="kv-preview-data file-preview-image"
+                                    <img src="{{$item->slide_field->link}}?{{$item->slide_field->cache_index}}" class="kv-preview-data file-preview-image"
                                          title="{{$item->slide_field->alt}}" alt="{{$item->slide_field->alt}}">
                                 </div>
                                 <div class="file-thumbnail-footer">

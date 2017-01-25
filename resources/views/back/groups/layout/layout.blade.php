@@ -74,7 +74,7 @@
 
                                 <div class="file-preview-frame">
                                     <div class="kv-file-content">
-                                        <img src="{{$item->layout_scheme_field->link}}"
+                                        <img src="{{$item->layout_scheme_field->link}}?{{$item->layout_scheme_field->cache_index}}"
                                              class="kv-preview-data file-preview-image"
                                              title="{{$item->layout_scheme_field->alt}}" alt="{{$item->layout_scheme_field->alt}}">
                                     </div>
@@ -125,7 +125,7 @@
 
                                 <div class="file-preview-frame">
                                     <div class="kv-file-content">
-                                        <img src="{{$item->complex_scheme_field->link}}"
+                                        <img src="{{$item->complex_scheme_field->link}}?{{$item->complex_scheme_field->cache_index}}"
                                              class="kv-preview-data file-preview-image"
                                              title="{{$item->complex_scheme_field->alt}}" alt="{{$item->complex_scheme_field->alt}}">
                                     </div>

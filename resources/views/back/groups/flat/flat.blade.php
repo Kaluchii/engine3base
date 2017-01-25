@@ -29,7 +29,7 @@
 
                                 <div class="file-preview-frame">
                                     <div class="kv-file-content">
-                                        <img src="{{$item->panorame_field->link}}"
+                                        <img src="{{$item->panorame_field->link}}?{{$item->panorame_field->cache_index}}"
                                              class="kv-preview-data file-preview-image"
                                              title="{{$item->panorame_field->alt}}" alt="{{$item->panorame_field->alt}}">
                                     </div>

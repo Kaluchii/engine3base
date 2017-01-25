@@ -32,7 +32,7 @@
 
                                 <div class="file-preview-frame">
                                     <div class="kv-file-content">
-                                        <img src="{{$static_all_site->logo_field->link}}" class="kv-preview-data file-preview-image" title="{{$static_all_site->logo_field->alt}}" alt="{{$static_all_site->logo_field->alt}}">
+                                        <img src="{{$static_all_site->logo_field->link}}?{{$static_all_site->logo_field->cache_index}}" class="kv-preview-data file-preview-image" title="{{$static_all_site->logo_field->alt}}" alt="{{$static_all_site->logo_field->alt}}">
                                     </div>
                                     <div class="file-thumbnail-footer">
                                         <div class="file-footer-caption" title="{{$static_all_site->logo_field->alt}}">{{$static_all_site->logo_field->name_field}} <br><samp>(425.24 KB)</samp></div>

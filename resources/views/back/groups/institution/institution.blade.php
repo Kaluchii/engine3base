@@ -29,7 +29,7 @@
 
                                 <div class="file-preview-frame">
                                     <div class="kv-file-content">
-                                        <img src="{{$item->marker_icon_field->link}}" class="kv-preview-data file-preview-image"
+                                        <img src="{{$item->marker_icon_field->link}}?{{$item->marker_icon_field->cache_index}}" class="kv-preview-data file-preview-image"
                                              title="{{$item->marker_icon_field->alt}}" alt="{{$item->marker_icon_field->alt}}">
                                     </div>
                                     <div class="file-thumbnail-footer">
