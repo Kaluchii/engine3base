@@ -44,6 +44,12 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
 
 
+    Route::get('/flat_page',                'AdminController@getFlatPage');
+    Route::get('/flat_page/{id}',           'AdminController@getFlatItem');
+    Route::get('/flat_page/{rub}/{id}',     'AdminController@getLayoutItem');
+
+
+
     Route::get('/taxonomy', 'TestController@showTaxonomy');
 
     // Служебные роуты

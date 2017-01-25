@@ -9,7 +9,7 @@
 
 
     <div class="pull-right">
-        <button type="submit" class="btn btn-primary global-save">Сохранить</button>
+        <button type="submit" class="btn btn-success global-save">Сохранить</button>
     </div>
     <strong>Разработано в <a href="http://interpro.kz" target="_blank">ИнтерПро</a></strong>
 </footer>

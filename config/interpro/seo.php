@@ -8,6 +8,7 @@ return [
         'seo_text'
         ],
     'owners'=> [
-        'head_slider'
+        'head_slider',
+        'layout',
         ]
 ];

@@ -38,6 +38,12 @@
                 </a>
             </li>
             <li class="header">Квартиры</li>
+            <li>
+                <a href="/adm/flat_page">
+                    <i class="fa fa-home"></i> <span>Список квартир</span>
+                </a>
+            </li>
+            <li>
 
 
             {{--<li>--}}

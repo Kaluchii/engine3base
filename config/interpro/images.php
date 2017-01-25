@@ -19,7 +19,10 @@ return [
     'institution.marker_icon' => [
         'resizes' => ['preview']
     ],
-    'layout.scheme' => [
+    'layout.layout_scheme' => [
+        'resizes' => ['preview']
+    ],
+    'layout.complex_scheme' => [
         'resizes' => ['preview']
     ]
 

@@ -1,6 +1,5 @@
 @section('scripts')
     <script src="/js/jquery.magnific-popup.js"></script>
-    <script src="/js/popupForm.js"></script>
     <script src="/js/device.js"></script>
     <script src="/js/fotorama.js"></script>
     <script src="/js/map.js"></script>

@@ -64,6 +64,12 @@ class AdminController extends Controller
             'map_block' => $map
         ]);
     }
+    public function getFlatPage(){
+        $flats = $this->extract->getBlock('flats_page');
+        return view('back.blocks.flats_page', [
+            'flats_page' => $flats
+        ]);
+    }
     public function getMainSeo(){
         $seo = $this->extract->getBlock('head_slider');
         return view('back.blocks.main_seo', [
@@ -92,6 +98,18 @@ class AdminController extends Controller
         $institution_item = $this->extract->getGroupItem('institution', $id);
         return view('back.groups.institution.institution', [
             'item' => $institution_item
+        ]);
+    }
+    public function getFlatItem( $id ){
+        $dom_flat_item = $this->extract->getGroupItem('dom_flat', $id);
+        return view('back.groups.dom_flat.dom_flat', [
+            'item' => $dom_flat_item
+        ]);
+    }
+    public function getLayoutItem( $rub, $id ){
+        $layout_item = $this->extract->getGroupItem('layout', $id);
+        return view('back.groups.layout.layout', [
+            'item' => $layout_item
         ]);
     }
 }
