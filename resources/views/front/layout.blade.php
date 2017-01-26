@@ -11,18 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/e-fav.gif" type="image/gif">
     @yield('styles')
-    {{$static->metrik_script_field}}
+    {!! $static->metrik_script_field !!}
     @yield('meta')
     <script src="/js/jquery.min.js"></script>
 </head>
 <body>
-    {{$static->metrik_noscript_field}}
+    {!! $static->metrik_noscript_field !!}
     @yield('header')
     @yield('content')
     @yield('footer')
 </body>
 
 @yield('scripts')
+@yield('onePageScripts')
 
 @include('front.popups.question')
 @include('front.popups.thank')

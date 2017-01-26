@@ -177,6 +177,23 @@
                 </div>
             </div>
 
+            <div class="form-group">
+                <label> Левый текстовый блок (под планировкой)</label>
+                <textarea class="form-control text"
+                          data-name="facts"
+                          data-type="text"
+                          data-block="layout"
+                          data-id="{{$item->id_field}}">{{$item->facts_field}}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label> Правый текстовый блок (под планировкой)</label>
+                <textarea class="form-control text"
+                          data-name="descr"
+                          data-type="text"
+                          data-block="layout"
+                          data-id="{{$item->id_field}}">{{$item->descr_field}}</textarea>
+            </div>
         </div>
     </div>
     <div class="box box box-success">

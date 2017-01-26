@@ -62,7 +62,7 @@ return [
     'flats_page' => [
         'groups' => [
             'dom_flat' => [
-                'string' => ['dom_flat_name'],
+                'string' => ['dom_flat_name', 'flat_title'],
                 'float' => ['min_area', 'max_area'],
             ],
             'layout' => [

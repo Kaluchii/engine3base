@@ -41,10 +41,36 @@ class FrontController extends Controller
         ]);
     }
 
-    public function getLayout( $flat = null, $layout = null ){
-        $flats = $this->extract->getBlock('flats_page');
-        foreach ($flats as $flat) {
+    public function getLayout( $flat_slug = null, $layout_slug = null ){
+        try {
+            if (!is_null($layout_slug)) {
+                $result = $this->extract->getBySlug('layout', $layout_slug);
+            } elseif (!is_null($flat_slug)) {
+                $flat = $this->extract->getBySlug('dom_flat', $flat_slug);
+                if ($flat->layout_group->count() > 0) {
+                    $result = $flat->layout_group->first();
+                } else {
+                    abort(404);
+                }
+            } else {
+                $flats = $this->extract->getBlock('flats_page');
+                if ($flats->dom_flat_group->count() > 0) {
+                    $flat = $flats->dom_flat_group->first();
+                    if ($flat->layout_group->count() > 0) {
+                        $result = $flat->layout_group->first();
+                    } else {
+                        abort(404);
+                    }
+                } else {
+                    abort(404);
+                }
+            }
         }
-        return view('front.flats.flat', []);
+        catch (Exception $e) {
+            abort(404);
+        }
+        return view('front.flats.flat', [
+            'layout' => $result
+        ]);
     }
 }

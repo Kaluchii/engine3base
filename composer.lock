@@ -315,16 +315,16 @@
         },
         {
             "name": "interpro/extractor",
-            "version": "1.0.7",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/extractor.git",
-                "reference": "4e0e2f561e66e4c692f453ae044a73f4ede2407e"
+                "reference": "3fd20ac9159f542c83c0c80a5b842aebd423cbb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/extractor/zipball/4e0e2f561e66e4c692f453ae044a73f4ede2407e",
-                "reference": "4e0e2f561e66e4c692f453ae044a73f4ede2407e",
+                "url": "https://api.github.com/repos/intpro/extractor/zipball/3fd20ac9159f542c83c0c80a5b842aebd423cbb0",
+                "reference": "3fd20ac9159f542c83c0c80a5b842aebd423cbb0",
                 "shasum": ""
             },
             "require": {
@@ -357,7 +357,7 @@
             "keywords": [
                 "extractor"
             ],
-            "time": "2017-01-23 10:04:43"
+            "time": "2017-01-26 08:27:32"
         },
         {
             "name": "interpro/feedback",
@@ -409,16 +409,16 @@
         },
         {
             "name": "interpro/imageaggr",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/imageaggr.git",
-                "reference": "81d1a02f1be2ff4fb57b31643d0508f0705a8595"
+                "reference": "0511693127b483df2d2a2b10cf7bbafaccd2c537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/81d1a02f1be2ff4fb57b31643d0508f0705a8595",
-                "reference": "81d1a02f1be2ff4fb57b31643d0508f0705a8595",
+                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/0511693127b483df2d2a2b10cf7bbafaccd2c537",
+                "reference": "0511693127b483df2d2a2b10cf7bbafaccd2c537",
                 "shasum": ""
             },
             "require": {
@@ -453,20 +453,20 @@
             "keywords": [
                 "imageaggr"
             ],
-            "time": "2017-01-23 07:56:42"
+            "time": "2017-01-26 08:05:48"
         },
         {
             "name": "interpro/qsaggr",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/qsaggr.git",
-                "reference": "f7c955499f28816cf535e1d2db60c76555c25ed1"
+                "reference": "3f1f566d33deb9189c16f628520098ee21e1cace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/f7c955499f28816cf535e1d2db60c76555c25ed1",
-                "reference": "f7c955499f28816cf535e1d2db60c76555c25ed1",
+                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/3f1f566d33deb9189c16f628520098ee21e1cace",
+                "reference": "3f1f566d33deb9189c16f628520098ee21e1cace",
                 "shasum": ""
             },
             "require": {
@@ -500,7 +500,7 @@
             "keywords": [
                 "qsaggr"
             ],
-            "time": "2017-01-22 13:14:39"
+            "time": "2017-01-26 10:06:30"
         },
         {
             "name": "interpro/scalar",

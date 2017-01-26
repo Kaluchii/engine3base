@@ -5,62 +5,42 @@
         <div class="wrapper">
             <div class="top-flat-navigation">
                 <div class="room-count-row">
-                    <div class="room-count-item">
-                        <p class="link-wrap">
-                            <a href="" class="link">1-комнатные</a>
-                        </p>
-                        <p class="flat-size">Площадь от 65,3 до 77,3 м<sup>2</sup></p>
-                    </div>
-                    <div class="room-count-item">
-                        <p class="link-wrap">
-                            <a href="" class="link">2-комнатные</a>
-                        </p>
-                        <p class="flat-size">Площадь от 74,2 до 93,3 м<sup>2</sup></p>
-                    </div>
-                    <div class="room-count-item">
-                        <p class="link-wrap">
-                            <a href="" class="link">3-комнатные</a>
-                        </p>
-                        <p class="flat-size">Площадь от 109,3 до 148 м<sup>2</sup></p>
-                    </div>
+                    @foreach ($layout->superior_item->superior_item->dom_flat_group as $flats_item)
+                        <div class="room-count-item">
+                            <p class="link-wrap">
+                                <a href="/flats/{{$flats_item->slug_field}}" class="link">{{$flats_item->dom_flat_name_field}}</a>
+                            </p>
+                            <p class="flat-size">Площадь от {{$flats_item->min_area_field}} до {{$flats_item->max_area_field}} м<sup>2</sup></p>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="layout-row">
-                    <h1 class="title">Трехкомнатные квартиры</h1>
+                    <h1 class="title">{{$layout->superior_item->flat_title_field}}</h1>
                     <div class="price">
                         <p class="metr">цена за м²<br>сегодня</p>
                         <p class="sum">440 000 тг<br>1200 $</p>
                     </div>
                     <div class="layouts">
-                        <p class="link-wrap">
-                            <a href="" class="link">Планировка 1-го типа</a>
-                        </p>
-                        <p class="link-wrap">
-                            <a href="" class="link">Планировка 2-го типа</a>
-                        </p>
-                        <p class="link-wrap">
-                            <a href="" class="link">Планировка 3-го типа</a>
-                        </p>
-                        <p class="link-wrap">
-                            <a href="" class="link">Планировка 4-го типа</a>
-                        </p>
-                        <p class="link-wrap">
-                            <a href="" class="link">Планировка 5-го типа</a>
-                        </p>
+                        @foreach($layout->superior_item->layout_group as $layout_item)
+                            <p class="link-wrap">
+                                <a href="/flats/{{$layout->superior_item->slug_field}}/{{$layout_item->slug_field}}" class="link">{{$layout_item->layout_name_field}}</a>
+                            </p>
+                        @endforeach
                     </div>
                 </div>
             </div>
             <div class="layout-map">
-                <div class="layout-img"><img src="/img/layout.png" alt=""></div>
+                <div class="layout-img"><img src="{{$layout->layout_scheme_field->link}}" alt="{{$layout->layout_scheme_field->alt}}"></div>
                 <div class="right-block">
                     <div class="flat-conditions">
                         <div class="conditions-item">
                             <p class="title">Стоимость</p>
-                            <p class="row">от 53 546 000 тенге</p>
-                            <p class="row">до 68 235 990 тенге</p>
+                            <p class="row">от {{number_format($layout->min_cost_field, 0, '', ' ')}} тенге</p>
+                            <p class="row">до {{number_format($layout->max_cost_field, 0, '', ' ')}} тенге</p>
                         </div>
                         <div class="conditions-item">
                             <p class="title">Площадь</p>
-                            <p class="row">от 134,2 до 148 м²</p>
+                            <p class="row">от {{str_replace('.', ',', $layout->min_area_field)}} до {{str_replace('.', ',', $layout->max_area_field)}} м²</p>
                         </div>
                         <div class="conditions-item">
                             <p class="title">Рассрочка до 12 месяцев</p>
@@ -76,24 +56,9 @@
                 </div>
             </div>
             <div class="flat-description">
-                <div class="scheme"><img src="/img/e-block.png" alt="Схема комплекса Евразия"></div>
-                <div class="text-block">
-                    <p>Доступна в блоках</p>
-                    <p>6,7</p><br>
-                    <p>Высота потолков</p>
-                    <p>2,7м</p><br>
-                    <p>Количество квартир</p>
-                    <p>24</p><br>
-                    <p>Доступна на этажах</p>
-                    <p>от 2-го по 15-й</p>
-                </div>
-                <div class="text-block">
-                    <p>Черновая отделка</p>
-                    <p>Пластиковые окна, радиаторы, входная дверь</p><br>
-                    <p>Вид из окон</p>
-                    <p>вид на горы и южную часть города</p><br><br><br><br>
-                    <p>Доступна планировка с дополнительным балконом</p>
-                </div>
+                <div class="scheme"><img src="{{$layout->complex_scheme_field->link}}" alt="{{$layout->complex_scheme_field->alt}}"></div>
+                <div class="text-block">{{$layout->facts_field}}</div>
+                <div class="text-block">{{$layout->descr_field}}</div>
             </div>
         </div>
         <div class="viewing">

@@ -22,6 +22,17 @@
             </div>
 
             <div class="form-group">
+                <label>Заголовок страницы</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->flat_title_field}}"
+                       data-name="flat_title"
+                       data-type="string"
+                       data-block="dom_flat"
+                       data-id="{{$item->id_field}}">
+            </div>
+
+            <div class="form-group">
                 <label>Вид ссылки в адресной строке</label>
                 <input class="form-control slug string"
                        type="text" placeholder=""
