@@ -76,6 +76,12 @@ class AdminController extends Controller
             'seo' => $seo
         ]);
     }
+    public function getCourse(){
+        $course = $this->extract->getBlock('prices');
+        return view('back.blocks.prices', [
+            'course' => $course
+        ]);
+    }
     public function getFlatsItem( $id ){
         $flat_item = $this->extract->getGroupItem('flat', $id);
         return view('back.groups.flat.flat', [

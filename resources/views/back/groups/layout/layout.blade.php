@@ -32,28 +32,6 @@
             </div>
 
             <div class="form-group">
-                <label>Минимальная цена</label>
-                <input class="form-control float"
-                       type="text" placeholder=""
-                       value="{{$item->min_cost_field}}"
-                       data-name="min_cost"
-                       data-type="int"
-                       data-block="layout"
-                       data-id="{{$item->id_field}}">
-            </div>
-
-            <div class="form-group">
-                <label>Максимальная цена</label>
-                <input class="form-control float"
-                       type="text" placeholder=""
-                       value="{{$item->max_cost_field}}"
-                       data-name="max_cost"
-                       data-type="int"
-                       data-block="layout"
-                       data-id="{{$item->id_field}}">
-            </div>
-
-            <div class="form-group">
                 <label>Минимальная площадь</label>
                 <input class="form-control float"
                        type="text" placeholder=""

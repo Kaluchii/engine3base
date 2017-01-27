@@ -92,16 +92,6 @@
                        data-block="flat"
                        data-id="{{$item->id_field}}">
             </div>
-            <div class="form-group">
-                <label>Стоимость "от" млн</label>
-                <input class="form-control int"
-                       type="text" placeholder=""
-                       value="{{$item->cost_field}}"
-                       data-name="cost"
-                       data-type="int"
-                       data-block="flat"
-                       data-id="{{$item->id_field}}">
-            </div>
 
             <div class="form-group">
                 <label>Текст описание (Появляется при наведении)</label>

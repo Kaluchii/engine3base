@@ -28,7 +28,6 @@ return [
             'flat' => [
                 'image' => ['panorame'],
                 'string' => ['flat_name'],
-                'int' => ['cost'],
                 'float' => ['min_area', 'max_area'],
                 'text' => ['description']
             ]
@@ -67,7 +66,6 @@ return [
             ],
             'layout' => [
                 'string' => ['layout_name'],
-                'int' => ['min_cost', 'max_cost'],
                 'float' => ['min_area', 'max_area'],
                 'image' => ['layout_scheme', 'complex_scheme'],
                 'text' => ['facts', 'descr'],

@@ -44,23 +44,27 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/course">
+                    <i class="fa fa-dollar"></i> <span>Цены</span>
+                </a>
+            </li>
 
 
             {{--<li>--}}
-                {{--<a href="reg">--}}
-                    {{--<i class="fa fa-link"></i> <span>Регистрация</span>--}}
-                {{--</a>--}}
+            {{--<a href="reg">--}}
+            {{--<i class="fa fa-link"></i> <span>Регистрация</span>--}}
+            {{--</a>--}}
             {{--</li>--}}
             {{--<li class="treeview">--}}
-                {{--<a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>--}}
-                        {{--<span class="pull-right-container">--}}
-                            {{--<i class="fa fa-angle-left pull-right"></i>--}}
-                        {{--</span>--}}
-                {{--</a>--}}
-                {{--<ul class="treeview-menu">--}}
-                    {{--<li><a href="#">Link in level 2</a></li>--}}
-                    {{--<li><a href="#">Link in level 2</a></li>--}}
-                {{--</ul>--}}
+            {{--<a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>--}}
+            {{--<span class="pull-right-container">--}}
+            {{--<i class="fa fa-angle-left pull-right"></i>--}}
+            {{--</span>--}}
+            {{--</a>--}}
+            {{--<ul class="treeview-menu">--}}
+            {{--<li><a href="#">Link in level 2</a></li>--}}
+            {{--<li><a href="#">Link in level 2</a></li>--}}
+            {{--</ul>--}}
             {{--</li>--}}
         </ul>
     </section>

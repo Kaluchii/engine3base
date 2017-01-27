@@ -129,7 +129,7 @@ var sourceMark = {
                     удобно.</p>
                 <div class="price">
                     <p class="metr">цена за м²<br>сегодня</p>
-                    <p class="sum">440 000 тг<br>1200 $</p>
+                    <p class="sum">{{number_format($course->dollar_field * $course->meter_cost_field, 0, '', ' ')}} тг<br>{{$course->meter_cost_field}} $</p>
                 </div>
             </div>
             <div class="panorams">
@@ -145,7 +145,7 @@ var sourceMark = {
                                 <span class="flat_name">{{$flat->flat_name_field}}</span>
                             </p>
                             <p class="flat-size">Площадь от {{str_replace('.', ',', $flat->min_area_field)}} до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
-                            <div class="flat-price">от {{$flat->cost_field}} млн. тенге</div>
+                            <div class="flat-price">от {{floor($flat->min_area_field * $course->dollar_field * $course->meter_cost_field / 1000000)}} млн. тенге</div>
                             <p class="flat-description">{{$flat->description_field}}</p>
                         </div>
 

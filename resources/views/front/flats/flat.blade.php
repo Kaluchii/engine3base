@@ -2,6 +2,7 @@
 @include('front.flats.meta')
 @section('content')
     <section class="content">
+        <?php $meter_cost_tg = $course->dollar_field * $course->meter_cost_field ?>
         <div class="wrapper">
             <div class="top-flat-navigation">
                 <div class="room-count-row">
@@ -18,7 +19,7 @@
                     <h1 class="title">{{$layout->superior_item->flat_title_field}}</h1>
                     <div class="price">
                         <p class="metr">цена за м²<br>сегодня</p>
-                        <p class="sum">440 000 тг<br>1200 $</p>
+                        <p class="sum">{{number_format($meter_cost_tg, 0, '', ' ')}} тг<br>{{$course->meter_cost_field}} $</p>
                     </div>
                     <div class="layouts">
                         @foreach($layout->superior_item->layout_group as $layout_item)
@@ -35,8 +36,8 @@
                     <div class="flat-conditions">
                         <div class="conditions-item">
                             <p class="title">Стоимость</p>
-                            <p class="row">от {{number_format($layout->min_cost_field, 0, '', ' ')}} тенге</p>
-                            <p class="row">до {{number_format($layout->max_cost_field, 0, '', ' ')}} тенге</p>
+                            <p class="row">от {{number_format($layout->min_area_field * $meter_cost_tg, 0, '', ' ')}} тенге</p>
+                            <p class="row">до {{number_format($layout->max_area_field * $meter_cost_tg, 0, '', ' ')}} тенге</p>
                         </div>
                         <div class="conditions-item">
                             <p class="title">Площадь</p>
@@ -44,7 +45,7 @@
                         </div>
                         <div class="conditions-item">
                             <p class="title">Рассрочка до 12 месяцев</p>
-                            <p class="row">от 3 250 000 тг</p>
+                            <p class="row">от {{number_format($layout->min_area_field * $meter_cost_tg / 10 * 7 / 12, 0, '', ' ')}} тг</p>
                         </div>
                     </div>
                     <div class="legend">

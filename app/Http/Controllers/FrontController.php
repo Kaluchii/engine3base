@@ -32,12 +32,14 @@ class FrontController extends Controller
         $flats = $this->extract->getBlock('flats_block');
         $interest = $this->extract->getBlock('interest_place');
         $map = $this->extract->getBlock('map_block');
+        $course = $this->extract->getBlock('prices');
         return view('front.index.index', [
             'slider' => $slider,
             'gallery' => $gallery,
             'flats' => $flats,
             'interest' => $interest,
             'map' => $map,
+            'course' => $course,
         ]);
     }
 
@@ -69,8 +71,10 @@ class FrontController extends Controller
         catch (Exception $e) {
             abort(404);
         }
+        $course = $this->extract->getBlock('prices');
         return view('front.flats.flat', [
-            'layout' => $result
+            'layout' => $result,
+            'course' => $course
         ]);
     }
 }

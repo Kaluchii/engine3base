@@ -49,6 +49,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
     Route::get('/flat_page/{rub}/{id}',     'AdminController@getLayoutItem');
 
 
+    Route::get('/course',                   'AdminController@getCourse');
+
 
     Route::get('/taxonomy', 'TestController@showTaxonomy');
 
