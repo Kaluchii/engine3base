@@ -19,7 +19,9 @@ Route::get('/advantages',                    'FrontController@getAdvantages');
 
 Route::post('/feedback/mail', 'MailController@send');
 
-
+Route::get('/courseupdate', function(){
+    $exitCode = \Illuminate\Support\Facades\Artisan::call('course:update');
+});
 
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
