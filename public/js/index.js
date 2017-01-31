@@ -2,7 +2,12 @@ $(document).ready(function () {
     //===============================================================
     //======= Обработчики для подсветки текущего пунтка ========
     //===============================================================
-
+    $('.menu-item a[href*=\'#location\']').bind("click", function(e){
+        $('html, body').stop().animate({
+            scrollTop: $('#location').offset().top
+        }, 1000);
+        e.preventDefault();
+    });
     // Подсветка текущего пункта меню галереи и открытие нужного слайдера
     $('.nav-item').on('click', function () {
         if (!$(this).hasClass('active')) {
@@ -59,9 +64,9 @@ $(document).ready(function () {
         }
 
         $('.nav-item:first-child .link').click();
-
     });
 
+    $('')
     //=====================================
     /*window.SpriteSpin.extendApi({
      stopAnimation: function(){

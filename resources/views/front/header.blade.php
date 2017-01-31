@@ -14,7 +14,7 @@
         <nav class="menu">
             <div class="menu-item"><a href="/" class="link">О комплексе</a></div>
             <div class="delimiter">•</div>
-            <div class="menu-item"><a href="" class="link">Расположение</a></div>
+            <div class="menu-item"><a href="/#location" class="link">Расположение</a></div>
             <div class="delimiter">•</div>
             <div class="menu-item"><a href="/advantages" class="link">Преимущества</a></div>
             <div class="delimiter">•</div>

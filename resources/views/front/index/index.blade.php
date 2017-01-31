@@ -177,7 +177,7 @@ var sourceMark = {
             @endforeach
         </div>
     </div>
-    <div class="on-map">
+    <div class="on-map" id="location">
         <h2 class="title">Удобное расположение</h2>
         <div class="map-nav">
             @foreach($map->marker_category_group as $category)

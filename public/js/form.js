@@ -42,7 +42,7 @@ $(document).ready(function(){
                 error = true;
                 $this.addClass('error');
             }
-            if ( $this.data('field-name') == 'email' || $this.data('field-name') == 'mail' ){
+            if ( $this.data('name') == 'email' || $this.data('name') == 'mail' ){
                 if (isEmail($this.val())){
                     $this.addClass('error');
                     error = true;
@@ -105,6 +105,7 @@ $(document).ready(function(){
 
             }else{
                 $('#'+unical+' .status-bar').addClass('show');
+                active = true;
             }
 
 

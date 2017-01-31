@@ -11,7 +11,6 @@ $(document).ready(function () {
     // Подсветка текущего пункта меню для общего меню
     $('.menu-item .link').each(function () {
         if ($(this).attr('href') == '/' + category) {
-            console.log(category + '   ' + category2 + '   ' + category3);
             $(this).closest('.menu-item').addClass('active');
         }
     });
