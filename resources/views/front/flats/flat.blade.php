@@ -11,7 +11,7 @@
                             <p class="link-wrap">
                                 <a href="/flats/{{$flats_item->slug_field}}" class="link">{{$flats_item->dom_flat_name_field}}</a>
                             </p>
-                            <p class="flat-size">Площадь от {{$flats_item->min_area_field}} до {{$flats_item->max_area_field}} м<sup>2</sup></p>
+                            <p class="flat-size">Площадь от {{str_replace('.', ',', $flats_item->min_area_field)}} до {{str_replace('.', ',', $flats_item->max_area_field)}} м<sup>2</sup></p>
                         </div>
                     @endforeach
                 </div>
