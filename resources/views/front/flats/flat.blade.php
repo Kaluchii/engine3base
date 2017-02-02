@@ -58,8 +58,8 @@
             </div>
             <div class="flat-description">
                 <div class="scheme"><img src="{{$layout->complex_scheme_field->link}}" alt="{{$layout->complex_scheme_field->alt}}"></div>
-                <div class="text-block">{{$layout->facts_field}}</div>
-                <div class="text-block">{{$layout->descr_field}}</div>
+                <div class="text-block">{!! $layout->facts_field !!}</div>
+                <div class="text-block">{!! $layout->descr_field !!}</div>
             </div>
         </div>
         <div class="viewing">
