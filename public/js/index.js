@@ -20,6 +20,22 @@ $(document).ready(function () {
             var $fotoramaDiv = $($(this).attr('id')).fotorama({
                 navwidth: '90%'
             });
+            /*$fotoramaDiv.on('fotorama:load',function () {
+               if( document.location.hash == '#location' ){
+                   $('html, body').stop().animate({
+                       scrollTop: $('#location').offset().top
+                   }, 1000);
+               }
+            });*/
+            /*$fotoramaDiv.on('fotorama:load',function () {
+               if( document.location.hash == '#location' ){
+                   var scrollTop = $('#location').offset().top;
+                   $(document).scrollTop(scrollTop);
+               }
+            });*/
+            $fotoramaDiv.on('fotorama:load',function () {
+                $('.placeholder').css('display', 'none')
+            });
             $($(this).attr('id')).on('fotorama:show', function (e, fotorama, extra) {
                 $('.js_how').text(fotorama.activeFrame.i);
             });
@@ -66,7 +82,6 @@ $(document).ready(function () {
         $('.nav-item:first-child .link').click();
     });
 
-    $('')
     //=====================================
     /*window.SpriteSpin.extendApi({
      stopAnimation: function(){

@@ -7,7 +7,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed !important;
-  background: rgba(0,120,191,0.85);
+  background: rgba(255,204,102,0.85);
 }
 
 .mfp-wrap {
@@ -103,7 +103,7 @@
 .white-popup {
   position: relative;
   background: #FFF;
-  padding: 20px 40px 20px;
+  padding: 40px 40px 15px;
   width: auto;
   max-width: 400px;
   box-sizing: border-box;
@@ -176,7 +176,7 @@ button::-moz-focus-inner {
 .mfp-counter {
   position: absolute;
   top: 0;
-  right: calc(50% - 18px);
+  right: calc(~'50% - 18px');
   color: #CCC;
   font-size: 12px;
   line-height: 18px;
@@ -315,51 +315,6 @@ img.mfp-img {
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
-
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  /**
-       * Remove all paddings around the image on small screen
-       */
-  .mfp-img-mobile .mfp-image-holder {
-    padding-left: 0;
-    padding-right: 0; }
-  .mfp-img-mobile img.mfp-img {
-    padding: 0; }
-  .mfp-img-mobile .mfp-figure:after {
-    top: 0;
-    bottom: 0; }
-  .mfp-img-mobile .mfp-figure small {
-    display: inline;
-    margin-left: 5px; }
-  .mfp-img-mobile .mfp-bottom-bar {
-    background: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    margin: 0;
-    top: auto;
-    padding: 3px 5px;
-    position: fixed;
-    box-sizing: border-box; }
-  .mfp-img-mobile .mfp-bottom-bar:empty {
-    padding: 0; }
-  .mfp-img-mobile .mfp-counter {
-    right: 5px;
-    top: 3px; }
-  .mfp-img-mobile .mfp-close {
-    top: 0;
-    right: 0;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    text-align: center;
-    padding: 0; } }
-
-@media all and (max-width: 900px) {
-  .mfp-container {
-    padding-left: 6px;
-    padding-right: 6px; } }
-
 .mfp-close-btn-in .mfp-close:hover {background: url(../img/close_h.png) center center no-repeat;}
 .white-popup.consult {
   max-width: 900px;
@@ -408,20 +363,7 @@ button.mfp-arrow.mfp-arrow-right:hover {
 .mfp-image-holder:hover .mfp-close {
   background: url(../img/close.png) top right no-repeat;
 }
-@media screen and (max-width: 900px) {
-  img.mfp-img {
-    width: 60%;
-    background: transparent;
-  }
-}
 
-
-@media screen and (max-width: 450px){
-  .white-popup#thanks {
-    padding:40px 20px !important;
-
-  }
-}
 .white-popup#thanks {
   padding: 222px 20px;
 }
@@ -460,5 +402,3 @@ button.mfp-arrow.mfp-arrow-right:hover {
 .mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-/**/

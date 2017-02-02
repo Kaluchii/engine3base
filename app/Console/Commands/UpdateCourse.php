@@ -40,8 +40,8 @@ class UpdateCourse extends Command
      */
     public function handle()
     {
-        Log::info('Course update success complete!');
-        /*$url = "http://www.nationalbank.kz/rss/rates_all.xml";
+        /*Log::info('Course update success complete!');*/
+        $url = "http://www.nationalbank.kz/rss/rates_all.xml";
         $dataObj = simplexml_load_file($url);
         if ($dataObj) {
             foreach ($dataObj->channel->item as $item) {
@@ -51,6 +51,6 @@ class UpdateCourse extends Command
                     break;
                 }
             }
-        }*/
+        }
     }
 }
