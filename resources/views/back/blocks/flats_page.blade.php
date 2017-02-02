@@ -11,14 +11,14 @@
                 <h3 class="box-title">
                     Квартиры
                 </h3>
-                <button type="button" data-parent="0" class="btn btn-primary pull-right add-group-item">Добавить</button>
+                {{--<button type="button" data-parent="0" class="btn btn-primary pull-right add-group-item">Добавить</button>
                 <div class="col-xs-5 pull-right">
                     <input type="text" class="form-control add-item"
                            data-name="dom_flat_name"
                            data-block="dom_flat"
                             placeholder="Название элемента"
                     >
-                </div>
+                </div>--}}
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -36,8 +36,8 @@
                             colspan="1" aria-label="">Статус публикации</th>--}}
                         <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1"
                             colspan="1" aria-label="">Порядок выдачи</th>
-                        <th  tabindex="0"  rowspan="1"
-                             colspan="1" aria-label="">Удаление</th>
+                        {{--<th  tabindex="0"  rowspan="1"
+                             colspan="1" aria-label="">Удаление</th>--}}
                     </tr>
                     </thead>
                     <tbody>
