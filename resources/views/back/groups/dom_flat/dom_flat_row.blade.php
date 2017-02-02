@@ -35,7 +35,7 @@
     </td>
 
     {{-- Удаления  --}}
-    <td>
+    {{--<td>
         <button type="button" class="btn btn-block btn-primary group-remove-item" data-id="{{$item->id_field}}" data-block="dom_flat">Удалить</button>
-    </td>
+    </td>--}}
 </tr>

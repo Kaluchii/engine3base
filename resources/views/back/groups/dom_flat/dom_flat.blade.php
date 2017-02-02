@@ -74,14 +74,14 @@
                     <h3 class="box-title">
                         Планировки
                     </h3>
-                    <button type="button" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-group-item">Добавить</button>
+                    {{--<button type="button" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-group-item">Добавить</button>
                     <div class="col-xs-5 pull-right">
                         <input type="text" class="form-control add-item"
                                data-name="layout_name"
                                data-block="layout"
                                placeholder="Название элемента"
                         >
-                    </div>
+                    </div>--}}
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
