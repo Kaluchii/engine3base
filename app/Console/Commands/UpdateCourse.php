@@ -47,7 +47,7 @@ class UpdateCourse extends Command
             foreach ($dataObj->channel->item as $item) {
                 if ($item->title == 'USD') {
                     //Сохраняем курс в БД/ $item->description
-                    $this->updateAgent->update('prices', 0, ['dollar' => $item->description]);
+                    $this->updateAgent->update('prices', 0, ['dollar' => $item->description + 2]);
                     break;
                 }
             }
