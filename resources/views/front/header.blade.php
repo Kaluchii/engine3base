@@ -16,8 +16,8 @@
             <div class="delimiter">•</div>
             <div class="menu-item"><a href="/#location" class="link">Расположение</a></div>
             <div class="delimiter">•</div>
-            <div class="menu-item"><a href="/advantages" class="link">Преимущества</a></div>
-            <div class="delimiter">•</div>
+            {{--<div class="menu-item"><a href="/advantages" class="link">Преимущества</a></div>
+            <div class="delimiter">•</div>--}}
             <div class="menu-item"><a href="/flats" class="link">Квартиры</a></div>
         </nav>
     </header>
