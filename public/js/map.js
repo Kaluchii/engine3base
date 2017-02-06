@@ -15,7 +15,6 @@ $(document).ready(function () {
             $('.map-nav-item:first-child .link').click();
         });
         var markersGroup;
-        $('.map-img-wrap').hide();
         $('.map-nav-item .link').on('click', function () {
             var category = $(this).data('category');
             /*удалить все маркеры*/
@@ -48,6 +47,7 @@ $(document).ready(function () {
             }
         });
     } catch (e) {
+        $('.map-img-wrap').show();
         $('.map-nav').hide();
         $('#map').hide();
     }
