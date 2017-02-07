@@ -13,7 +13,7 @@
     @yield('styles')
     {!! $static->metrik_script_field !!}
     @yield('meta')
-    <script src="/js/jquery.min.js"></script>
+    <script defer src="/js/jquery.min.js"></script>
 </head>
 <body>
     {!! $static->metrik_noscript_field !!}
