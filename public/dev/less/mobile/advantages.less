@@ -1,0 +1,40 @@
+@media screen and (max-width: 1024px) {
+  .advantages {
+    padding: 0 50px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .advantages {
+    padding: 0 30px;
+    .col-1-2 {
+      &:first-child {
+        margin-right: 60px;
+      }
+    }
+  }
+  .advantage-page {
+    .buying {
+      background-position-y: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .advantages {
+    flex-direction: column;
+    .col-1-2 {
+      max-width: none;
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .advantages {
+    padding: 0 15px;
+  }
+}

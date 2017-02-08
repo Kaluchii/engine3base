@@ -77,4 +77,11 @@ class FrontController extends Controller
             'course' => $course
         ]);
     }
+
+    public function getAdvantages(){
+        $advantages = $this->extract->getBlock('advantages');
+        return view('front.advantages.advantages', [
+            'advantages' => $advantages
+        ]);
+    }
 }

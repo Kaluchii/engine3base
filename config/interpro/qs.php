@@ -74,6 +74,16 @@ return [
         ]
     ],
 
+    'advantages' => [
+        'groups' => [
+            'advantage' => [
+                'image' => ['advantage'],
+                'string' => ['green_title', 'green_text'],
+                'text' => ['descr'],
+            ]
+        ]
+    ],
+
     'prices' => [
         'float' => ['dollar', 'meter_cost']
     ]
