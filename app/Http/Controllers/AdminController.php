@@ -70,6 +70,12 @@ class AdminController extends Controller
             'flats_page' => $flats
         ]);
     }
+    public function getAdvantages(){
+        $advantages = $this->extract->getBlock('advantages');
+        return view('back.blocks.advantages', [
+            'advantages' => $advantages
+        ]);
+    }
     public function getMainSeo(){
         $seo = $this->extract->getBlock('head_slider');
         return view('back.blocks.main_seo', [
@@ -110,6 +116,12 @@ class AdminController extends Controller
         $dom_flat_item = $this->extract->getGroupItem('dom_flat', $id);
         return view('back.groups.dom_flat.dom_flat', [
             'item' => $dom_flat_item
+        ]);
+    }
+    public function getAdvantagesItem( $id ){
+        $advantage = $this->extract->getGroupItem('advantage', $id);
+        return view('back.groups.advantage.advantage', [
+            'item' => $advantage
         ]);
     }
     public function getLayoutItem( $rub, $id ){

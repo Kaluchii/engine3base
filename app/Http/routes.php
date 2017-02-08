@@ -23,6 +23,13 @@ Route::get('/courseupdate', function(){
     $exitCode = \Illuminate\Support\Facades\Artisan::call('course:update');
 });
 
+Route::get('/columnadd', function(){
+    \Illuminate\Support\Facades\Schema::table('groups', function(\Illuminate\Database\Schema\Blueprint $table)
+    {
+        $table->boolean('predefined');
+    });
+});
+
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
@@ -50,6 +57,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
     Route::get('/flat_page/{id}',           'AdminController@getFlatItem');
     Route::get('/flat_page/{rub}/{id}',     'AdminController@getLayoutItem');
 
+
+    Route::get('/advantages',                'AdminController@getAdvantages');
+    Route::get('/advantages/{id}',           'AdminController@getAdvantagesItem');
 
     Route::get('/course',                   'AdminController@getCourse');
 

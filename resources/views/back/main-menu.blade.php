@@ -43,6 +43,12 @@
                     <i class="fa fa-home"></i> <span>Список квартир</span>
                 </a>
             </li>
+            <li class="header">Преимущества</li>
+            <li>
+                <a href="/adm/advantages">
+                    <i class="fa fa-thumbs-o-up"></i> <span>Список преимуществ</span>
+                </a>
+            </li>
             <li>
                 <a href="/adm/course">
                     <i class="fa fa-dollar"></i> <span>Цены</span>

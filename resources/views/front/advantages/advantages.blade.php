@@ -6,7 +6,20 @@
             <div class="page-title"><h1>Преимущества</h1></div>
             <div class="advantages">
                 <div class="col-1-2">
-                    <div class="advantages-item">
+                    @foreach($advantages->advantage_group->odd() as $item)
+                        <div class="advantages-item">
+                            <div class="img-wrap"><img src="{{$item->advantage_field->link}}" alt="{{$item->advantage_field->alt}}"></div>
+                            <h3 class="title">{{$item->title_field}}</h3>
+                            <div class="text-block">{!! $item->descr_field !!}</div>
+                            @if($item->green_title_field)
+                                <div class="green-block">
+                                    <p class="big-title">{{$item->green_title_field}}</p>
+                                    <p class="text">{{$item->green_text_field}}</p>
+                                </div>
+                            @endif
+                        </div>
+                    @endforeach
+                    {{--<div class="advantages-item">
                         <div class="img-wrap"><img src="/img/car.png" alt=""></div>
                         <h3 class="title">Усиленная сейсмостойкость</h3>
                         <div class="text-block"><p>
@@ -47,10 +60,23 @@
                                 — Центр детского развития
                                 и другое.</p>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
                 <div class="col-1-2">
-                    <div class="advantages-item">
+                    @foreach($advantages->advantage_group->even() as $item)
+                        <div class="advantages-item">
+                            <div class="img-wrap"><img src="{{$item->advantage_field->link}}" alt="{{$item->advantage_field->alt}}"></div>
+                            <h3 class="title">{{$item->title_field}}</h3>
+                            <div class="text-block">{!! $item->descr_field !!}</div>
+                            @if($item->green_title_field)
+                                <div class="green-block">
+                                    <p class="big-title">{{$item->green_title_field}}</p>
+                                    <p class="text">{{$item->green_text_field}}</p>
+                                </div>
+                            @endif
+                        </div>
+                    @endforeach
+                    {{--<div class="advantages-item">
                         <div class="img-wrap"><img src="/img/tree.png" alt=""></div>
                         <h3 class="title">Безопасный внутренний двор</h3>
                         <div class="text-block"><p>
@@ -82,7 +108,7 @@
                                 В продаже коммерческие
                                 площади от 240 до 10 000 м²</p>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </div>

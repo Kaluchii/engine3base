@@ -24,6 +24,9 @@ return [
     ],
     'layout.complex_scheme' => [
         'resizes' => ['preview']
-    ]
+    ],
+    'advantage.advantage' => [
+        'resizes' => ['preview']
+    ],
 
 ];
