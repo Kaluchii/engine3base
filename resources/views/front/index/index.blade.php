@@ -5,8 +5,8 @@
     <script defer src="/js/spritespin.js"></script>
     <script defer src="/js/spritespin.mod-panorama.js"></script>
     <script defer src="/js/index.js"></script>
-    <script defer src="/js/map.js"></script>
     <script defer src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script defer src="/js/map.js"></script>
 @endsection
 @section('content')
 <section class="content">
