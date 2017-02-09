@@ -23,12 +23,12 @@ Route::get('/courseupdate', function(){
     $exitCode = \Illuminate\Support\Facades\Artisan::call('course:update');
 });
 
-Route::get('/columnadd', function(){
+/*Route::get('/columnadd', function(){
     \Illuminate\Support\Facades\Schema::table('groups', function(\Illuminate\Database\Schema\Blueprint $table)
     {
         $table->boolean('predefined');
     });
-});
+});*/
 
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
@@ -71,6 +71,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
     Route::post('/newItemRow', 'GroupItemController@newRow');
     Route::post('/newItemBox', 'GroupItemController@newBox');
+    Route::post('/newImage',   'GroupItemController@newImageItem');
 
     Route::post('/removeItem', 'GroupItemController@removeItem');
 });

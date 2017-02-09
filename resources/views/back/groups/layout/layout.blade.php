@@ -157,7 +157,7 @@
 
             <div class="form-group">
                 <label> Левый текстовый блок (под планировкой)</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="facts"
                           data-type="text"
                           data-block="layout"
@@ -166,7 +166,7 @@
 
             <div class="form-group">
                 <label> Правый текстовый блок (под планировкой)</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="descr"
                           data-type="text"
                           data-block="layout"
@@ -211,7 +211,7 @@
             </div>
             <div class="form-group">
                 <label>СЕО текст (выводится в нижней части страницы)</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="seo_text"
                           data-type="seo"
                           data-block="layout"

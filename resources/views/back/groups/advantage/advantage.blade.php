@@ -71,7 +71,7 @@
 
             <div class="form-group">
                 <label>Текст преимущества</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="descr"
                           data-type="text"
                           data-block="advantage"

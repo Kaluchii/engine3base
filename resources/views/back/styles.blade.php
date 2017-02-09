@@ -7,4 +7,5 @@
     <link rel="stylesheet" href="/admin/css/dataTables.bootstrap.css">
     <link rel="stylesheet" href="/admin/css/skin-blue.min.css">
     <link rel="stylesheet" href="/admin/css/style.css">
+    <link rel="stylesheet" href="/admin/css/summernote.css">
 @endsection

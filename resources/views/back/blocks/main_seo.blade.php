@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <label>СЕО текст (выводится в нижней части страницы)</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="seo_text"
                           data-type="seo"
                           data-block="head_slider"

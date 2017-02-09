@@ -95,7 +95,7 @@
 
             <div class="form-group">
                 <label>Текст описание (Появляется при наведении)</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text-editor"
                           data-name="description"
                           data-type="text"
                           data-block="flat"
