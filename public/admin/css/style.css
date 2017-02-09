@@ -25,11 +25,6 @@ textarea.form-control {
     color: #ffffff;
 }
 
-.login-button {
-    margin-top: 3px;
-}
-
-
 .btn.btn-primary.btn-file {
     border-radius: 3px;
 }
@@ -48,7 +43,13 @@ textarea.form-control {
     margin-bottom: 0;
 }
 
+.checkbox {
+    margin-top: 7px;
+}
 
+.icheckbox_square-blue {
+    top: -2px
+}
 /*Были удалены все шрифты кроме Arial, sans-serif*/
 
 
