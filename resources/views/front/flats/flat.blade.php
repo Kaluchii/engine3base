@@ -73,7 +73,7 @@
                 <div class="text-block">{!! $layout->descr_field !!}</div>
             </div>
             <div class="download-wrap">
-                <button class="download">Скачать планировку в PDF</button>
+                <a class="download" href="{{$layout->pdf_field->link}}" download="{{$layout->pdf_field->title}}">Скачать планировку в PDF</a>
             </div>
         </div>
         <div class="viewing">

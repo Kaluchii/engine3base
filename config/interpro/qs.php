@@ -69,6 +69,7 @@ return [
                 'float' => ['min_area', 'max_area'],
                 'image' => ['layout_scheme', 'complex_scheme'],
                 'text' => ['facts', 'descr'],
+                'file' => ['pdf'],
                 'dom_flat' => ['superior']
             ],
         ]

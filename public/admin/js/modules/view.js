@@ -23,6 +23,10 @@ var widgets_class = {
         class: '.form-control.text',
         object: text
     },
+    file: {
+        class: '.form-control.files',
+        object: file
+    },
     table: {
         class: '.table-widget-selector',
         object: table
