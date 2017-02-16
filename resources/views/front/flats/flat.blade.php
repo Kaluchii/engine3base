@@ -72,6 +72,9 @@
                 <div class="text-block">{!! $layout->facts_field !!}</div>
                 <div class="text-block">{!! $layout->descr_field !!}</div>
             </div>
+            <div class="download-wrap">
+                <button class="download">Скачать планировку в PDF</button>
+            </div>
         </div>
         <div class="viewing">
             <h2 class="title">Записаться на просмотр</h2>
