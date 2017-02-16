@@ -41,7 +41,7 @@ class UpdateCourse extends Command
     public function handle()
     {
         /*Log::info('Course update success complete!');*/
-        $url = "http://www.nationalbank.kz/rss/rates_all.xml";
+        /*$url = "http://www.nationalbank.kz/rss/rates_all.xml";
         $dataObj = simplexml_load_file($url);
         if ($dataObj) {
             foreach ($dataObj->channel->item as $item) {
@@ -51,6 +51,19 @@ class UpdateCourse extends Command
                     break;
                 }
             }
+        }*/
+        $url = "http://www.rbk2.ibecsystems.kz/api/currency/json";
+
+        $dataObj = json_decode(file_get_contents($url), true);
+        if ($dataObj) {
+            foreach ($dataObj['exchange']['date']['branch']['sell']['currency'] as $item) {
+                if ($item['attributes']['dst'] == 'USD') {
+                    $this->updateAgent->update('prices', 0, ['dollar' => $item['attributes']['amount']]);
+                    echo('Course success update. USD to KZT course value = ' . $item['attributes']['amount']."\n");
+                    break;
+                }
+            }
         }
     }
+
 }

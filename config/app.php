@@ -156,6 +156,7 @@ return [
         Interpro\Seo\SeoFirstServiceProvider::class,
         Interpro\ImageAggr\ImageAggrFirstServiceProvider::class,
         Interpro\QS\QSFirstServiceProvider::class,
+        /*Interpro\FileAggr\FileAggrFirstServiceProvider::class,*/
         Interpro\Feedback\FeedbackFirstServiceProvider::class,
         //============================================
 

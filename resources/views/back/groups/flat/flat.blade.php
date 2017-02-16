@@ -92,7 +92,7 @@
                        data-block="flat"
                        data-id="{{$item->id_field}}">
             </div>
-
+/var/www/public_html/eurasia
             <div class="form-group">
                 <label>Текст описание (Появляется при наведении)</label>
                 <textarea class="form-control text-editor"

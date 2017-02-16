@@ -47,8 +47,14 @@ textarea.form-control {
     margin-top: 7px;
 }
 
+.icheck>label {
+    width: 140px;
+    text-align: right;
+}
+
 .icheckbox_square-blue {
-    top: -2px
+    top: -2px;
+    float: left;
 }
 /*Были удалены все шрифты кроме Arial, sans-serif*/
 

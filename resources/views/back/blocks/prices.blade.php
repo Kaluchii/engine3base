@@ -25,7 +25,7 @@
                        data-type="float"
                        data-block="prices"
                        data-id="0"
-                       {{--disabled--}}>
+                       disabled>
             </div>
         </div>
     </div>

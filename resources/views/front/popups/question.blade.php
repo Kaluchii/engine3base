@@ -27,7 +27,7 @@
                     <label  class="row-name">
                         Сообщение
                     </label>
-                    <textarea type="text" class="popup-input" data-name="ask_question" placeholder="Вопрос или комментарий"></textarea>
+                    <textarea class="popup-input" data-name="ask_question" placeholder="Вопрос или комментарий"></textarea>
                 </div>
             </div>
             <div class="row button-row">
