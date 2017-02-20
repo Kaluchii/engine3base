@@ -34,7 +34,8 @@ var sourceMark = {
 };
 </script>
     <div class="wrapper">
-        <div class="page-title"><h1>Семейный жилой комплекс в центре Алматы</h1></div>
+        <div id="scroller"><span></span></div>
+        <div class="page-title"><h1>Семейный жилой комплекс в&nbsp;центре&nbsp;Алматы</h1></div>
         <div class="address"><p>На пересечении улиц Гоголя и Масанчи</p></div>
         <div class="slider">
             <div class="fotorama" id="fotoramaTop" data-autoplay="5000">
@@ -147,7 +148,7 @@ var sourceMark = {
                                 {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}
                                 <span class="flat_name">{{$flat->flat_name_field}}</span>
                             </p>
-                            <p class="flat-size">Площадь от {{str_replace('.', ',', $flat->min_area_field)}} до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
+                            <p class="flat-size">от {{str_replace('.', ',', $flat->min_area_field)}} до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
                             <div class="flat-price">от {{floor($flat->min_area_field * $course->dollar_field * $course->meter_cost_field / 1000000)}} млн. тенге</div>
                             <p class="flat-description">{{$flat->description_field}}</p>
                         </div>
@@ -163,7 +164,7 @@ var sourceMark = {
                 <h3 class="title">Комфортные возможности покупки</h3>
                 <div class="col-1"><p>При покупке квартиры или коммерческого помещения, доступна <b>рассрочка под 0%</b> до 12
                         месяцев. Первоначальный взнос от 30%.</p></div>
-                <div class="col-2"><p>Комплекс введен в эксплуатацию, поэтому <b>ипотеку до 20 лет</b> можно взять в любом
+                <div class="col-2"><p>Комплекс введен в эксплуатацию, поэтому <b>ипотеку</b> можно взять в любом
                         казахстанском банке.</p></div>
             </div>
         </div>

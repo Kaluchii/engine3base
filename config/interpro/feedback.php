@@ -44,7 +44,7 @@ return [
         'form2' => [],
         'ask' => [
             'form_fields' => [
-                'string' => ['ask_name', 'ask_mail'],
+                'string' => ['ask_name', 'ask_mail', 'ask_phone'],
                 'text'   => ['ask_question']
             ]
         ]

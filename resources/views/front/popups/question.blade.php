@@ -10,16 +10,26 @@
                         Ваше Имя
                     </label>
                     <input type="text" class="popup-input" data-name="ask_name" placeholder="Имя">
-
                 </div>
             </div>
             <div class="row">
                 <div class="col-1-2">
                     <label  class="row-name">
-                        Ваша почта <span class="gray">для ответа</span>
+                        Эл. почта <span class="gray">для ответа</span>
                     </label>
                     <input type="text" class="popup-input" data-name="ask_mail" placeholder="Эл. почта">
-
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                    <label for="" class="row-name">
+                        Контактный телефон
+                    </label>
+                    <input type="text" class="popup-input"
+                           data-mask="+7 (000) 000-00-00"
+                           placeholder="+7 (___) ___-__-__"
+                           data-require="true"
+                           data-name="ask_phone">
                 </div>
             </div>
             <div class="row">

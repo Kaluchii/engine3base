@@ -27,7 +27,9 @@
 @media screen and (max-width: 1023px) {
   .layout-map {
     align-items: center;
+    -webkit-align-items: center;
     flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
     .layout-img {
       width: auto;
     }
@@ -64,8 +66,10 @@
 @media screen and (max-width: 820px) {
   .flat-description {
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     .scheme {
       order: 1;
+      -webkit-order: 1;
       width: 100%;
       margin: 40px 0 0 40px;
     }
@@ -87,6 +91,7 @@
   .layout-map {
     .right-block {
       justify-content: space-between;
+      -webkit-justify-content: space-between;
       width: 100%;
       .legend {
         margin: 0;
@@ -96,6 +101,7 @@
 
   .flat-description {
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     .scheme {
       margin: 40px 0 0;
     }
@@ -113,10 +119,13 @@
   .layout-map {
     .right-block {
       flex-direction: column;
+      -webkit-flex-direction: column;
       .flat-conditions {
         display: flex;
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         width: 100%;
         .conditions-item {
           &:last-child {

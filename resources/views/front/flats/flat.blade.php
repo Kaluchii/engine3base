@@ -12,7 +12,7 @@
                                 <a href="/flats/{{$flats_item->slug_field}}"
                                    class="link">{{$flats_item->dom_flat_name_field}}</a>
                             </p>
-                            <p class="flat-size">Площадь от {{str_replace('.', ',', $flats_item->min_area_field)}}
+                            <p class="flat-size">от {{str_replace('.', ',', $flats_item->min_area_field)}}
                                 до {{str_replace('.', ',', $flats_item->max_area_field)}} м<sup>2</sup></p>
                         </div>
                     @endforeach
@@ -42,9 +42,11 @@
                         <div class="conditions-item">
                             <p class="title">Стоимость</p>
                             <p class="row">от {{number_format($layout->min_area_field * $meter_cost_tg, 0, '', ' ')}}
-                                тенге</p>
+                                тенге <span class="baks">(&nbsp;{{number_format($layout->min_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                            </p>
                             <p class="row">до {{number_format($layout->max_area_field * $meter_cost_tg, 0, '', ' ')}}
-                                тенге</p>
+                                тенге <span class="baks">(&nbsp;{{number_format($layout->max_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                            </p>
                         </div>
                         <div class="conditions-item">
                             <p class="title">Площадь</p>
@@ -55,7 +57,8 @@
                             <p class="title">Рассрочка до 12 месяцев</p>
                             <p class="row">
                                 от {{number_format($layout->min_area_field * $meter_cost_tg / 10 * 7 / 12, 0, '', ' ')}}
-                                тг</p>
+                                тг <span class="baks">(&nbsp;{{number_format($layout->min_area_field * $course->meter_cost_field / 10 * 7 / 12, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                            </p>
                         </div>
                     </div>
                     <div class="legend">

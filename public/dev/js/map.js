@@ -17,7 +17,6 @@ $(document).ready(function () {
         var markersGroup;
         $('.map-nav-item .link').on('click', function () {
             var category = $(this).data('category');
-            /*удалить все маркеры*/
             for (var categoryItemKey in sourceMark) {
                 var categoryItem = sourceMark[categoryItemKey];
                 if (category == categoryItem['slug']) {

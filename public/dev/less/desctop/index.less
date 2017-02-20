@@ -1,3 +1,25 @@
+#scroller {
+  bottom: 15%;
+  left: 0;
+  margin-left: 84%;
+  position: fixed;
+  width: 1%;
+  z-index: 3010;
+  display: none;
+  span {
+    background-image: url("/img/btn_top.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+    margin: 0 0 0 100%;
+    width: 50px;
+    &:hover {
+    background-position: 0 -50px;
+    cursor: pointer
+  }
+  }
+}
+
 .page-title {
   h1 {
     margin: 0 auto;
@@ -22,7 +44,9 @@
 .conditions {
   display: flex;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   margin-top: 20px;
   padding: 0 120px;
   .title {
@@ -70,8 +94,9 @@
   .gallery-nav {
     display: flex;
     justify-content: center;
+    -webkit-justify-content: center;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -106,6 +131,7 @@
     .img-text-wrap {
       display: flex;
       align-items: flex-end;
+      -webkit-align-items: flex-end;
       height: 100%;
       p {
         width: 100%;
@@ -129,7 +155,7 @@
 
 .more-news {
   margin-top: 85px;
-  padding: 15px 25px 22px;
+  padding: 40px 25px;
   background: #e7f6d5;
   .social-buttons {
     text-align: center;
@@ -185,7 +211,6 @@
       }
       .sum {
         color: inherit;
-        font-size: 18px;
         font-family: @bold;
         padding: 0 20px;
       }
@@ -201,6 +226,7 @@
   .panorams {
     display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     background: @key no-repeat top center;
     margin-top: 30px;
     padding: 0 50px;
@@ -279,7 +305,7 @@
         }
         .flat-size {
           margin-top: 25px;
-          font-size: 14px;
+          font-size: 16px;
         }
         .flat-price {
           display: inline-block;
@@ -330,7 +356,7 @@
 .buying {
   max-width: 1200px;
   margin: 65px auto 0;
-  padding: 45px 0 50px;
+  padding: 45px 0 60px;
   background: @baloon no-repeat 160px 15px;
   .text-wrap {
     max-width: 650px;
@@ -354,7 +380,9 @@
 .interesting-place {
   display: flex;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   max-width: 1000px;
   margin: 90px auto 0 auto;
   padding: 0 50px;
@@ -438,8 +466,9 @@
   .map-nav {
     display: flex;
     justify-content: center;
+    -webkit-justify-content: center;
     margin-top: 45px;
-    font-size: 18px;
+    font-size: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -526,12 +555,11 @@
   .phone {
     position: relative;
     color: #333333;
-    font-size: 46px;
+    font-size: 36px;
     max-width: 400px;
     margin: 35px auto 0;
     &::before {
-      left: -60px;
-      top: 5px;
+      left: -10px;
       position: absolute;
       content: @bottom_tel;
     }
