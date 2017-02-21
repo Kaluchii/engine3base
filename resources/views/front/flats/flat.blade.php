@@ -42,10 +42,10 @@
                         <div class="conditions-item">
                             <p class="title">Стоимость</p>
                             <p class="row">от {{number_format($layout->min_area_field * $meter_cost_tg, 0, '', ' ')}}
-                                тенге <span class="baks">(&nbsp;{{number_format($layout->min_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                                тг <span class="baks">({{number_format($layout->min_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$)</span>
                             </p>
                             <p class="row">до {{number_format($layout->max_area_field * $meter_cost_tg, 0, '', ' ')}}
-                                тенге <span class="baks">(&nbsp;{{number_format($layout->max_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                                тг <span class="baks">({{number_format($layout->max_area_field * $course->meter_cost_field, 0, '', ' ')}}&nbsp;$)</span>
                             </p>
                         </div>
                         <div class="conditions-item">
@@ -57,7 +57,8 @@
                             <p class="title">Рассрочка до 12 месяцев</p>
                             <p class="row">
                                 от {{number_format($layout->min_area_field * $meter_cost_tg / 10 * 7 / 12, 0, '', ' ')}}
-                                тг <span class="baks">(&nbsp;{{number_format($layout->min_area_field * $course->meter_cost_field / 10 * 7 / 12, 0, '', ' ')}}&nbsp;$&nbsp;)</span>
+                                тг <span class="baks">({{number_format($layout->min_area_field * $course->meter_cost_field / 10 * 7 / 12, 0, '', ' ')}}&nbsp;$)</span>
+                                ежемесячно
                             </p>
                         </div>
                     </div>

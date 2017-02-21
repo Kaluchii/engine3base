@@ -1,5 +1,5 @@
 .footer {
-  background: #f7f5e9;
+  background: #e7f6d5;
   .bottom-row {
     max-width: 1200px;
     -webkit-box-sizing: border-box;
@@ -11,21 +11,21 @@
     display: flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     .bottom-text {
       &.left {
-        max-width: 230px;
+        max-width: 150px;
       }
       &.center {
         text-align: center;
       }
       &.right {
-        /*flex-grow: 0.5;
-        -webkit-flex-grow: 0.5;*/
         text-align: right;
-        width: 230px;
+        width: 150px;
       }
       .soc-links {
-        a {
+        a:not(:first-child) {
           margin-left: 15px;
         }
       }

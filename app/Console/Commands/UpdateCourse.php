@@ -40,18 +40,6 @@ class UpdateCourse extends Command
      */
     public function handle()
     {
-        /*Log::info('Course update success complete!');*/
-        /*$url = "http://www.nationalbank.kz/rss/rates_all.xml";
-        $dataObj = simplexml_load_file($url);
-        if ($dataObj) {
-            foreach ($dataObj->channel->item as $item) {
-                if ($item->title == 'USD') {
-                    //Сохраняем курс в БД/ $item->description
-                    $this->updateAgent->update('prices', 0, ['dollar' => $item->description + 2]);
-                    break;
-                }
-            }
-        }*/
         $url = "http://www.rbk2.ibecsystems.kz/api/currency/json";
 
         $dataObj = json_decode(file_get_contents($url), true);

@@ -1,0 +1,94 @@
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+p{
+  font-size:@font_p;
+}
+.text-block{
+  &--green{
+    p {
+      font-size: @font_p+2;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+  pre {
+    color: #666666;
+  }
+  p, blockquote{
+    color: #666666;
+    line-height: 1.5;
+    width: 100%;
+    a{
+      .link(@link-color,@link-border,@hover-color,@hover-border);
+    }
+  }
+  h1{
+  }
+  h2{
+    font-weight: normal;
+  }
+  img{
+    max-width: 100%;
+  }
+  h3{
+    line-height: 1.5;
+    width: 100%;
+    font-weight: normal;
+  }
+  h4{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  h5{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  ul{
+    /*list-style-type: disc;*/
+    /*margin-left: 15px;*/
+    li{
+      /*list-style-type: disc;*/
+      color: #666666;
+      line-height: 1.5;
+      width: 100%;
+      font-size: 16px;
+      &::before {
+        content: '— ';
+      }
+      a{
+        .link(@link-color,@link-border,@hover-color,@hover-border);
+      }
+    }
+  }
+  ol{
+    list-style-type: decimal;
+    margin-left: 15px;
+    li{
+      list-style-type: decimal;
+      color: #666666;
+      line-height: 1.5;
+      width: 100%;
+      font-size: 16px;
+      a{
+        .link(@link-color,@link-border,@hover-color,@hover-border);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  p{
+    font-size: @m_font_p;
+  }
+}
