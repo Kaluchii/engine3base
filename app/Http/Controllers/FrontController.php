@@ -21,6 +21,7 @@ class FrontController extends Controller
         $this->extract->tuneSelection('flat')->sortBy('sorter','ASC');
         $this->extract->tuneSelection('gallery_type')->sortBy('sorter','ASC');
         $this->extract->tuneSelection('marker_category')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('advantage')->sortBy('sorter','ASC');
         $static = $this->extract->getBlock('static_all_site');
         view()->share('static', $static);
     }
