@@ -144,14 +144,13 @@ var sourceMark = {
                                 <img src="{{$flat->panorame_field->link}}" alt="{{$flat->panorame_field->alt}}">
                             </div>
                             <p class="link-wrap">
-                                {{--<a href="" class="link">{{$flat->flat_name_field}}</a>--}}
-                                <span class="flat_name">{{$flat->flat_name_field}}</span>
+                                <a href="{{$flat->link_to_flat_field}}" class="link">{{$flat->flat_name_field}}</a>
+                                {{--<span class="flat_name">{{$flat->flat_name_field}}</span>--}}
                             </p>
                             <p class="flat-size">от {{str_replace('.', ',', $flat->min_area_field)}} до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
                             <div class="flat-price">от {{floor($flat->min_area_field * $course->dollar_field * $course->meter_cost_field / 1000000)}} млн. тенге</div>
                             <p class="flat-description">{{$flat->description_field}}</p>
                         </div>
-
                     </div>
                 @endforeach
             </div>

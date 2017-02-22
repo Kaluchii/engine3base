@@ -27,7 +27,7 @@ return [
         'groups' => [
             'flat' => [
                 'image' => ['panorame'],
-                'string' => ['flat_name'],
+                'string' => ['flat_name', 'link_to_flat'],
                 'float' => ['min_area', 'max_area'],
                 'text' => ['description']
             ]

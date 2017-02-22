@@ -92,10 +92,19 @@
                        data-block="flat"
                        data-id="{{$item->id_field}}">
             </div>
-/var/www/public_html/eurasia
+            <div class="form-group">
+                <label>Ссылка на страницу квартиры (относительно корня сайта)</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->link_to_flat_field}}"
+                       data-name="link_to_flat"
+                       data-type="string"
+                       data-block="flat"
+                       data-id="{{$item->id_field}}">
+            </div>
             <div class="form-group">
                 <label>Текст описание (Появляется при наведении)</label>
-                <textarea class="form-control text-editor"
+                <textarea class="form-control text"
                           data-name="description"
                           data-type="text"
                           data-block="flat"
