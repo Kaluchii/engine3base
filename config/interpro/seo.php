@@ -10,5 +10,6 @@ return [
     'owners'=> [
         'head_slider',
         'layout',
+        'advantages',
         ]
 ];
