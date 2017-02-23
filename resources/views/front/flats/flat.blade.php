@@ -73,9 +73,13 @@
             <div class="flat-description">
                 <div class="scheme"><img src="{{$layout->complex_scheme_field->link}}"
                                          alt="{{$layout->complex_scheme_field->alt}}"></div>
-                <div class="text-block">{!! $layout->facts_field !!}</div>
-                <div class="text-block">{!! $layout->descr_field !!}</div>
+                <div class="text-blocks">
+                    <div class="text-block">{!! $layout->facts_field !!}</div>
+                    <div class="text-block">{!! $layout->descr_field !!}</div>
+                    @if($layout->balcony_field) <div class="with-balcony"><p class="with-balcony-text">* Доступна планировка с дополнительным балконом</p></div> @endif
+                </div>
             </div>
+            <hr class="visual-row">
             <div class="download-wrap">
                 <a class="download" href="{{$layout->pdf_field->link}}" download="{{$layout->pdf_field->title}}">Скачать планировку в PDF</a>
             </div>

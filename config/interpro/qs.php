@@ -70,6 +70,7 @@ return [
                 'image' => ['layout_scheme', 'complex_scheme'],
                 'text' => ['facts', 'descr'],
                 'file' => ['pdf'],
+                'bool' => ['balcony'],
                 'dom_flat' => ['superior']
             ],
         ]

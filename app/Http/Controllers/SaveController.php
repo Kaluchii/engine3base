@@ -22,7 +22,7 @@ class SaveController extends Controller
                 // То перебираем поля массива
                 foreach($value as $key => $val) {
                     // Если поле ЛОГИЧЕСКОЕ
-                    if($value === 'bool'){
+                    if($field === 'bool'){
                         //============= Приводим к булевому типу =========
                         if($val === 'true'){
                             $result_array += [$key => true];

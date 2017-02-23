@@ -174,6 +174,19 @@
             </div>
 
             <div class="form-group">
+                <label>
+                    <input type="checkbox" class="minimal bool"
+                           data-name="balcony"
+                           data-type="bool"
+                           data-block="layout"
+                           data-id="{{$item->id_field}}"
+                           @if($item->balcony_field) checked @endif>
+
+                    Доступна планировка с балконом (галочка - доступна)
+                </label>
+            </div>
+
+            <div class="form-group">
                 <label>PDF планировка</label>
                 <div class="dropzone">
                     <div class="file-input">

@@ -6,6 +6,9 @@
   .flat-description {
     padding: 65px 30px 0;
   }
+  .visual-row{
+    margin: 50px 30px 0;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -43,8 +46,8 @@
   }
 
   .flat-description {
-    .text-block {
-      margin-left: 40px;
+    .text-blocks {
+      padding-left: 9%;
     }
   }
 }
@@ -63,6 +66,18 @@
   }
 }
 
+@media screen and (max-width: 880px) {
+  .flat-description {
+    .text-blocks {
+      padding-left: 6%;
+    }
+    .text-block {
+      &:nth-child(2) {
+        margin-left: 50px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 820px) {
   .flat-description {
     flex-wrap: wrap;
@@ -74,8 +89,9 @@
       margin: 40px 0 0 40px;
     }
     .text-block {
-      &:last-child {
-        width: calc(~'100% - 320px');
+      &:nth-child(2) {
+        width: calc(~'100% - 300px');
+        margin-left: 80px;
       }
     }
   }
@@ -124,11 +140,13 @@
     .scheme {
       margin: 40px 0 0;
     }
+    .text-blocks {
+      padding-left: 0;
+    }
     .text-block {
-      margin-left: 0;
-      &:last-child {
-        width: calc(~'100% - 200px');
-        margin-left: 0;
+      &:nth-child(2) {
+        width: calc(~'100% - 220px');
+        margin-left: 50px;
       }
     }
   }
@@ -188,6 +206,13 @@
     .text-block p {
       font-size: 14px;
     }
+    .text-blocks{
+      .with-balcony{
+        font-size: 14px;
+        .with-balcony-text{
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 555px) {
@@ -229,9 +254,20 @@
 }
 @media screen and (max-width: 450px) {
   .flat-description {
+    padding-top: 30px;
+    .text-blocks{
+      .with-balcony{
+        font-size: 16px;
+      }
+    }
     .text-block {
-      &:last-child {
-        width: calc(~'100% - 170px');
+      width: 100%;
+      &:nth-child(2) {
+        width: 100%;
+        margin: 24px 0 0 0;
+      }
+      p {
+        font-size: 16px;
       }
     }
   }
@@ -261,17 +297,5 @@
 }
 
 @media screen and (max-width: 400px) {
-  .flat-description {
-    padding-top: 30px;
-    .text-block {
-      width: 100%;
-      &:last-child {
-        width: 100%;
-        margin-top: 40px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-  }
+
 }
