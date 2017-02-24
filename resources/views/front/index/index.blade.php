@@ -38,7 +38,7 @@ var sourceMark = {
         <div class="page-title"><h1>Семейный жилой комплекс в&nbsp;центре&nbsp;Алматы</h1></div>
         <div class="address"><p>На пересечении улиц Гоголя и Масанчи</p></div>
         <div class="slider">
-            <div class="fotorama" id="fotoramaTop" data-autoplay="5000">
+            <div class="fotorama" id="fotoramaTop" data-loop="true" data-autoplay="5000">
                 @foreach($slider->slider_group as $slide)
                     <img src="{{$slide->slide_field->link}}" alt="{{$slide->slide_field->alt}}">
                 @endforeach
@@ -102,7 +102,7 @@ var sourceMark = {
                 @foreach($gallery->gallery_type_group as $type_v)
                     @if($type_v->show_field == 1)
                         <div class="fotorama js_gallery_fotorama" id="{{$type_v->id_field}}" data-auto="false" data-nav="thumbs"
-                             data-thumbmargin="10"
+                             data-thumbmargin="10" data-loop="true"
                              data-thumbwidth="100" data-thumbheight="70" data-transition="crossfade">
                             @foreach($type_v->slider_from_group as $gal_slide)
                                 <div data-img="{{$gal_slide->slide_field->link}}" data-thumb="{{$gal_slide->slide_field->link}}">
