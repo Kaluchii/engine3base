@@ -5,6 +5,9 @@
 
     Header set Cache-Control "max-age=604800, public"
 
+    # Запрет вывода списка файлов в каталоге
+    Options -Indexes
+
     RewriteEngine On
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
