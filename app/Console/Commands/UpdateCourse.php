@@ -40,12 +40,12 @@ class UpdateCourse extends Command
      */
     public function handle()
     {
-        $url = "http://www.rbk2.ibecsystems.kz/api/currency/json";
+        $url = "https://www.bankrbk.kz/api/currency/json/";
 
         $dataObj = json_decode(file_get_contents($url), true);
         if ($dataObj) {
-            foreach ($dataObj['exchange']['date']['branch']['sell']['currency'] as $item) {
-                if ($item['attributes']['dst'] == 'USD') {
+            foreach ($dataObj['transfer']['date']['branch']['sell']['currency'] as $item) {
+                if ($item['attributes']['dst'] == 'KZT' && $item['attributes']['src'] == 'USD') {
                     $this->updateAgent->update('prices', 0, ['dollar' => $item['attributes']['amount']]);
                     echo('Course success update. USD to KZT course value = ' . $item['attributes']['amount']."\n");
                     break;

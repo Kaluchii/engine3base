@@ -19,9 +19,9 @@ Route::get('/advantages',                    'FrontController@getAdvantages');
 
 Route::post('/feedback/mail', 'MailController@send');
 
-Route::get('/courseupdate', function(){
+/*Route::get('/courseupdate', function(){
     $exitCode = \Illuminate\Support\Facades\Artisan::call('course:update');
-});
+});*/
 
 /*Route::get('/columnadd', function(){
     \Illuminate\Support\Facades\Schema::table('groups', function(\Illuminate\Database\Schema\Blueprint $table)
