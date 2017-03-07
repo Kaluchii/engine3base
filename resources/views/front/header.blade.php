@@ -1,4 +1,8 @@
 @section('header')
+    <div class="banner">
+        <img src="/img/big.jpg" alt="" class="banner-desktop">
+        <img src="/img/forphone.jpg" alt="" class="banner-mobile">
+    </div>
     <header class="header">
         <div class="top">
             <div class="consult">
