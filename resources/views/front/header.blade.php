@@ -12,7 +12,7 @@
             <div class="logo"><a href="/"><img src="{{$static->logo_field->link}}" alt="{{$static->logo_field->alt}}"></a></div>
             <div class="phones">
                 <p class="top-text">Отдел продаж</p>
-                <p class="tel-num">{{$static->phone_field}}</p>
+                <p class="tel-num"><span class="binct-phone-number-1">{{$static->phone_field}}</span></p>
             </div>
         </div>
         <nav class="menu">
