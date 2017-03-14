@@ -20,6 +20,7 @@
     @yield('header')
     @yield('content')
     @yield('footer')
+    {!! $static->scripts_after_body_field !!}
 </body>
 
 @yield('scripts')

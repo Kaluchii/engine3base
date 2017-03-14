@@ -5,7 +5,7 @@ return [
     'static_all_site' => [
         'string' => ['phone','copyright','vk','inst','fb'],
         'image'  => ['logo'],
-        'text'   => ['metrik_script', 'metrik_noscript']
+        'text'   => ['metrik_script', 'metrik_noscript', 'scripts_after_body']
     ],
     'head_slider' => [
         'imageset' => ['slider' => 'slide'],
