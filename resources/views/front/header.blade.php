@@ -1,6 +1,6 @@
 @section('header')
     <div class="banner">
-        <img src="/img/big.jpg" alt="" class="banner-desktop">
+        <img src="/img/banner.png" alt="" class="banner-desktop">
         <img src="/img/forphone.jpg" alt="" class="banner-mobile">
     </div>
     <header class="header">
