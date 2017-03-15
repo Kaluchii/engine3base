@@ -88,7 +88,7 @@
             <h2 class="title">Записаться на просмотр</h2>
             <p class="view-desc">Позвоните или напишите нам письмо, чтобы договориться
                 о просмотре в удобное для вас время.</p>
-            <div class="phone"><span class="binct-phone-number-2">{{$static->phone_field}}</span></div>
+            <div class="phone"><span class="binct-phone-number-1">{{$static->phone_field}}</span></div>
             <button class="send-button" href="#question" id="write">Написать письмо</button>
         </div>
     </section>
