@@ -1,7 +1,7 @@
 @section('header')
     <div class="banner">
-        <img src="/img/banner.png" alt="" class="banner-desktop">
-        <img src="/img/forphone.jpg" alt="" class="banner-mobile">
+        <img src="/img/banner.png" alt="С Наурызом" class="banner-desktop">
+        <img src="/img/banner_mobile.jpg" alt="С Наурызом" class="banner-mobile">
     </div>
     <header class="header">
         <div class="top">
