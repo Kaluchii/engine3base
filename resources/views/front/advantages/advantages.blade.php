@@ -3,6 +3,7 @@
 @section('content')
     <section class="content">
         <div class="wrapper">
+            <div class="shadow"></div>
             <div class="page-title"><h1>Преимущества</h1></div>
             <div class="advantages">
                 <div class="col-1-2">
@@ -37,16 +38,23 @@
                 </div>
             </div>
         </div>
-        <div class="buying-wrap advantage-page">
+        {{--<div class="buying-wrap advantage-page">
             <div class="buying">
                 <div class="text-wrap">
                     <h3 class="title">Комфортные возможности покупки</h3>
                     <div class="col-1"><p>При покупке квартиры или коммерческого помещения, доступна <b>рассрочка под 0%</b> до 12
                             месяцев. Первоначальный взнос от 30%.</p></div>
-                    <div class="col-2"><p>Комплекс введен в эксплуатацию, поэтому <b>ипотеку</b> можно взять в любом
+                    <div class="col-2"><p>Комплекс введен в эксплуатацию, поэтому <b>ипотеку</b> можно оформить в любом
                             казахстанском банке.</p></div>
                 </div>
             </div>
+        </div>--}}
+        <div class="viewing">
+            <h2 class="title">Записаться на просмотр</h2>
+            <p class="view-desc">Позвоните или напишите нам письмо, чтобы договориться
+                о просмотре в удобное для вас время.</p>
+            <div class="phone"><span class="binct-phone-number-1">{{$static->phone_field}}</span></div>
+            <button class="send-button" href="#question" id="write">Написать письмо</button>
         </div>
     </section>
 @endsection

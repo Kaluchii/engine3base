@@ -55,6 +55,14 @@
   .condition-item {
     width: 260px;
     margin-top: 25px;
+    padding: 25px 20px;
+    transition: box-shadow .5s ease 0s;
+    border-radius: 3px;
+
+    &:hover {
+      box-shadow: 0 8px 27px 3px rgba(0, 0, 0, 0.25);
+    }
+
     .condition-title {
       width: 160px;
       margin-top: 25px;
@@ -97,9 +105,6 @@
     -webkit-justify-content: center;
     margin-top: 30px;
     font-size: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     .delimiter {
       color: #9E9E9E;
@@ -256,16 +261,32 @@
         padding: 20px;
         text-align: center;
         background: #ffffff;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
+
         &:hover {
-          -webkit-box-shadow: 0 8px 27px 3px rgba(0, 0, 0, 0.25);
-          -moz-box-shadow: 0 8px 27px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0 8px 27px 3px rgba(0, 0, 0, 0.25);
+          transition: box-shadow .5s ease 0s;
           padding-bottom: 45px;
+          border-radius: 3px;
+
           .flat-description {
             display: block;
+          }
+
+          .link-wrap{
+            .link-str {
+              cursor: pointer;
+              background: -webkit-gradient(linear, 0 0, 100% 0, from(#ffd7be), to(#ffd7be));
+              background: -webkit-linear-gradient(to left, #ffd7be, #ffd7be 100%);
+              background: -webkit-gradient(linear, right top, left top, from(#ffd7be), to(#ffd7be));
+              background: -webkit-linear-gradient(right, #ffd7be, #ffd7be 100%);
+              background: linear-gradient(to left, #ffd7be, #ffd7be 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+              background-position: 0 100%;
+              background-size: 10px 1px;
+              background-repeat: repeat-x;
+              color: #ff6000;
+            }
           }
         }
         .panorama {
@@ -293,14 +314,19 @@
         .link-wrap {
           margin-top: 15px;
           padding: 0 40px;
-          .flat_name {
+          .link-str {
             font-size: 20px;
             line-height: 1.2;
-            color: #333333;
-          }
-          .link {
-            font-size: 20px;
-            line-height: 1.2;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(#fce2c1), to(#fce2c1));
+            background: -webkit-linear-gradient(to left, #fce2c1, #fce2c1 100%);
+            background: -webkit-gradient(linear, right top, left top, from(#fce2c1), to(#fce2c1));
+            background: -webkit-linear-gradient(right, #fce2c1, #fce2c1 100%);
+            background: linear-gradient(to left, #fce2c1, #fce2c1 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+            background-position: 0 100%;
+            background-size: 10px 1px;
+            background-repeat: repeat-x;
+            color: #ff9530;
           }
         }
         .flat-size {
@@ -311,12 +337,16 @@
           display: inline-block;
           margin-top: 20px;
           padding: 7px 10px;
-          color: #333333;
-          font-family: @bold;
           border: 1px solid #cccccc;
-          -webkit-border-radius: 1px;
-          -moz-border-radius: 1px;
           border-radius: 1px;
+        }
+        .flat-price-tg{
+          font-family: @bold;
+          color: #333333;
+        }
+        .flat-price-dol{
+          margin-top: 5px;
+          font-size: 12px;
         }
         .flat-description {
           display: none;

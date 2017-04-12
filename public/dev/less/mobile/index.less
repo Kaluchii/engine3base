@@ -42,14 +42,16 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1020px) {
   .conditions {
     .condition-item {
       width: 40%;
       min-width: 245px;
     }
   }
+}
 
+@media screen and (max-width: 990px) {
   .apartments {
     .row {
       .price {
@@ -204,17 +206,6 @@
 }
 
 @media screen and (max-width: 635px) {
-  .gallery {
-    .gallery-nav {
-      font-size: 16px;
-      .delimiter {
-        margin: 0 5px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 590px) {
   .conditions {
     flex-direction: column;
     -webkit-flex-direction: column;
@@ -227,6 +218,7 @@
       text-align: center;
       .condition-title {
         width: auto;
+        text-align: left;
       }
       .descr {
         text-align: left;
@@ -234,6 +226,17 @@
     }
   }
 
+  .gallery {
+    .gallery-nav {
+      font-size: 16px;
+      .delimiter {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
   .apartments {
     .row {
       .price {
@@ -428,6 +431,12 @@
 }
 
 @media screen and (max-width: 340px) {
+  .conditions {
+    .condition-item {
+      min-width: 260px;
+    }
+  }
+
   .apartments {
     .panorams {
       padding: 200px 0 0;

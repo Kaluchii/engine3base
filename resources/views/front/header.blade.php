@@ -6,7 +6,7 @@
     <header class="header">
         <div class="top">
             <div class="consult">
-                <p class="top-text">Онлайн-констультант</p>
+                <p class="top-text">Отдел продаж</p>
                 <p class="question"><a  href="#question" id="answer" class="link">Написать письмо</a></p>
             </div>
             <div class="logo"><a href="/"><img src="{{$static->logo_field->link}}" alt="{{$static->logo_field->alt}}"></a></div>
