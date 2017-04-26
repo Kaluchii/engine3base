@@ -182,7 +182,7 @@
                                         до {{str_replace('.', ',', $flat->max_area_field)}} м<sup>2</sup></p>
                                     <div class="flat-price">
                                         <p class="flat-price-tg">
-                                            от {{floor($flat->min_area_field * $course->dollar_field * $course->meter_cost_field / 1000000)}}
+                                            от {{str_replace('.', ',', round($flat->min_area_field * $course->dollar_field * $course->meter_cost_field / 1000000, 1))}}
                                             млн. тенге
                                         </p>
                                         <p class="flat-price-dol">
