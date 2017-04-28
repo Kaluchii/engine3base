@@ -18,7 +18,7 @@
                                     <img src="{{$item->slide_field->link}}?{{$item->slide_field->cache_index}}" class="kv-preview-data file-preview-image" title="{{$item->slide_field->alt}}" alt="{{$item->slide_field->alt}}">
                                 </div>
                                 <div class="file-thumbnail-footer">
-                                    <div class="file-footer-caption" title="{{$item->slide_field->alt}}">{{$item->slide_field->name_field}} <br><samp>(425.24 KB)</samp></div>
+                                    <div class="file-footer-caption" title="{{$item->slide_field->alt}}">{{$item->slide_field->name_field}} <br> </div>
                                     <div class="file-actions">
                                         <input type="text" class="form-control alt-text" data-block="slider_from" data-type="images" data-id="{{$item->id_field}}" data-name="alt" value="{{$item->slide_field->alt}}">
                                         <div class="clearfix"></div>

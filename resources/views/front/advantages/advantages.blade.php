@@ -12,9 +12,9 @@
                             <div class="img-wrap"><img src="{{$item->advantage_field->link}}" alt="{{$item->advantage_field->alt}}"></div>
                             <h3 class="title">{{$item->title_field}}</h3>
                             <div class="text-block">{!! $item->descr_field !!}</div>
-                            @if($item->green_title_field)
+                            @if($item->fact_visible_field)
                                 <div class="green-block">
-                                    <p class="big-title">{{$item->green_title_field}}</p>
+                                    <img src="{{$item->fact_field->link}}" alt="{{$item->fact_field->alt}}">
                                     <p class="text">{{$item->green_text_field}}</p>
                                 </div>
                             @endif
@@ -27,9 +27,9 @@
                             <div class="img-wrap"><img src="{{$item->advantage_field->link}}" alt="{{$item->advantage_field->alt}}"></div>
                             <h3 class="title">{{$item->title_field}}</h3>
                             <div class="text-block">{!! $item->descr_field !!}</div>
-                            @if($item->green_title_field)
+                            @if($item->fact_visible_field)
                                 <div class="green-block">
-                                    <p class="big-title">{{$item->green_title_field}}</p>
+                                    <img src="{{$item->fact_field->link}}" alt="{{$item->fact_field->alt}}">
                                     <p class="text">{{$item->green_text_field}}</p>
                                 </div>
                             @endif

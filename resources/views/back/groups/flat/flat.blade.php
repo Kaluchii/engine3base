@@ -36,7 +36,7 @@
                                     <div class="file-thumbnail-footer">
                                         <div class="file-footer-caption"
                                              title="{{$item->panorame_field->alt}}">{{$item->panorame_field->name_field}}
-                                            <br><samp>(425.24 KB)</samp></div>
+                                            <br> </div>
                                         <div class="file-actions">
                                             <input type="text" class="form-control alt-text" data-block="flat"
                                                    data-type="images" data-id="{{$item->id_field}}" data-name="alt">

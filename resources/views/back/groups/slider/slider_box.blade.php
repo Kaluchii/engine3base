@@ -22,7 +22,7 @@
                                 <div class="file-thumbnail-footer">
                                     <div class="file-footer-caption"
                                          title="{{$item->slide_field->alt}}">{{$item->slide_field->name_field}}
-                                        <br><samp>(425.24 KB)</samp></div>
+                                        <br> </div>
                                     <div class="file-actions">
                                         <input type="text" class="form-control alt-text" data-block="slider"
                                                data-type="images" data-id="{{$item->id_field}}" data-name="alt"

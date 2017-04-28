@@ -79,9 +79,10 @@ return [
     'advantages' => [
         'groups' => [
             'advantage' => [
-                'image' => ['advantage'],
-                'string' => ['green_title', 'green_text'],
+                'image' => ['advantage', 'fact'],
+                'string' => ['green_text'],
                 'text' => ['descr'],
+                'bool' => ['fact_visible'],
             ]
         ]
     ],

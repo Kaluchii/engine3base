@@ -28,5 +28,8 @@ return [
     'advantage.advantage' => [
         'resizes' => ['preview']
     ],
+    'advantage.fact' => [
+        'resizes' => ['preview']
+    ],
 
 ];
