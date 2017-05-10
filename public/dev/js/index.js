@@ -39,18 +39,18 @@ $(document).ready(function () {
                 navwidth: '90%'
             });
             /*$fotoramaDiv.on('fotorama:load',function () {
-               if( document.location.hash == '#location' ){
-                   $('html, body').stop().animate({
-                       scrollTop: $('#location').offset().top
-                   }, 1000);
-               }
-            });*/
+             if( document.location.hash == '#location' ){
+             $('html, body').stop().animate({
+             scrollTop: $('#location').offset().top
+             }, 1000);
+             }
+             });*/
             /*$fotoramaDiv.on('fotorama:load',function () {
-               if( document.location.hash == '#location' ){
-                   var scrollTop = $('#location').offset().top;
-                   $(document).scrollTop(scrollTop);
-               }
-            });*/
+             if( document.location.hash == '#location' ){
+             var scrollTop = $('#location').offset().top;
+             $(document).scrollTop(scrollTop);
+             }
+             });*/
             $fotoramaDiv.on('fotorama:load',function () {
                 $('.placeholder').css('display', 'none')
             });
@@ -59,6 +59,10 @@ $(document).ready(function () {
             });
             // 2. Get the API object.
             var fotorama = $fotoramaDiv.data('fotorama');
+
+            fotorama.resize({
+                maxheight: '90%'
+            });
 
             $('.js_how').text(fotorama.activeFrame.i);
 
