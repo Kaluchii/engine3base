@@ -105,7 +105,7 @@ $(document).ready(function () {
     });
 
     //=====================================
-    /*window.SpriteSpin.extendApi({
+    window.SpriteSpin.extendApi({
      stopAnimation: function(){
      this.data.animate = false;
      SpriteSpin.setAnimation(this.data);
@@ -124,7 +124,7 @@ $(document).ready(function () {
      source: $this.data('img'),
      // this sets the width of the display. The panorama image must be larger
      width: 1300,
-     height: 257,
+     height: 200,
      animate: false,
      // select the modules
      mods: [
@@ -141,5 +141,5 @@ $(document).ready(function () {
      function () {
      // off hover
      panoramaAPI[ $(this).attr('id') ].stopAnimation();
-     })*/
+     })
 });
