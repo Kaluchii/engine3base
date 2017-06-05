@@ -3,7 +3,7 @@
         Options -MultiViews
     </IfModule>
 
-#    Header set Cache-Control "max-age=604800, public"
+    Header set Cache-Control "max-age=604800, public"
 
     # Запрет вывода списка файлов в каталоге
     Options -Indexes
