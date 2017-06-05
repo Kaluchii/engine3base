@@ -58,52 +58,42 @@
                     <a href="/advantages" class="condition-link">
                         <img src="/img/01-bird.png" alt="Удобное расположение">
                         <p class="condition-title">Удобное расположение</p>
-                        <p class="descr">«Евразия» находится в тихом центре Алматы, вдали от крупных автомагистралей и
-                            пробок.
-                            Недалеко школы, парки и детские сады.</p>
+                        <p class="descr">«Евразия» находится в тихом центре Алматы, вдали от крупных проспектов и пробок. Рядом Мега, школы, детские сады и скверы.</p>
                     </a>
                 </div>
                 <div class="condition-item">
                     <a href="/advantages" class="condition-link">
                         <img src="/img/02-ball.png" alt="Безопасный внутренний двор">
                         <p class="condition-title">Безопасный внутренний двор</p>
-                        <p class="descr">Во двор, где играют дети, ограничен въезд автомобилей
-                            и доступ посторонних.</p>
+                        <p class="descr">Во двор, где играют дети, ограничен въезд автомобилей и доступ посторонних.</p>
                     </a>
                 </div>
                 <div class="condition-item">
                     <a href="/advantages" class="condition-link">
                         <img src="/img/03-helm.png" alt="Усиленная сейсмостойкость">
                         <p class="condition-title">Усиленная сейсмостойкость</p>
-                        <p class="descr">Мы тщательно соблюдали строительные нормативы и строили на совесть. 90%
-                            конструкции —
-                            монолит. Сейсмостойкость выше 9 баллов.</p>
+                        <p class="descr">Мы тщательно соблюдали нормативы и строили на совесть. 90% конструкции — монолит. Реальная сейсмостойкость свыше 9 баллов.</p>
                     </a>
                 </div>
                 <div class="condition-item">
                     <a href="/advantages" class="condition-link">
                         <img src="/img/04-jeep.png" alt="Вместительный паркинг">
                         <p class="condition-title">Вместительный паркинг</p>
-                        <p class="descr">Для жильцов и гостей комплекса действуют охраняемые наземные и подземные
-                            парковки
-                            площадью более 4 500 м².</p>
+                        <p class="descr">Для жильцов и гостей комплекса действуют охраняемые подземные и наземные парковки площадью более 4 500 м².</p>
                     </a>
                 </div>
                 <div class="condition-item">
                     <a href="/advantages" class="condition-link">
                         <img src="/img/05-cups.png" alt="Собственная инфраструктура">
                         <p class="condition-title">Собственная инфраструктура</p>
-                        <p class="descr">На первых этажах откроются заведения и магазины, необходимые для удобства
-                            жильцов.</p>
+                        <p class="descr">На первых этажах откроются заведения и магазины, необходимые для удобства жильцов.</p>
                     </a>
                 </div>
                 <div class="condition-item">
                     <a href="/advantages" class="condition-link">
                         <img src="/img/06-coint.png" alt="Возможности для бизнеса">
                         <p class="condition-title">Возможности для бизнеса</p>
-                        <p class="descr">660 квартир с состоятельной аудиторией более 2 000 человек. Доступны
-                            коммерческие
-                            площади от 240 до 10 000 м².</p>
+                        <p class="descr">660 квартир с состоятельной аудиторией более 2 000 человек. Для приобретения доступны коммерческие помещения площадью от 240 до 10 000 м².</p>
                     </a>
                 </div>
             </div>
@@ -156,9 +146,7 @@
             <div class="apartments">
                 <div class="row">
                     <h2 class="title">Квартиры для любой семьи</h2>
-                    <p class="clarification">Современная просторная планировка позволяет выстроить все так, как вам
-                        будет
-                        удобно.</p>
+                    <p class="clarification">Современная и просторная планировка позволяет организовать пространство на свой вкус.</p>
                     <div class="price">
                         <p class="metr">цена за м²<br>сегодня</p>
                         <p class="sum">{{number_format($course->dollar_field * $course->meter_cost_field, 0, '', ' ')}}
