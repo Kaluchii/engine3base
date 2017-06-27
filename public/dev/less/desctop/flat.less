@@ -81,10 +81,28 @@
   display: flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
+  align-items: flex-start;
   margin-top: 45px;
   padding: 0 65px;
   .layout-img {
     max-width: 760px;
+    box-shadow: 0 0 0 1px transparent;
+    transition: box-shadow .4s ease;
+    &:hover{
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:after {
+      content:'';
+      display:block;
+      width:33px;
+      height:33px;
+      position:absolute;
+      top:0;
+      right:0;
+      background:url(/img/icon.png);
+    }
+
     img {
       max-width: 100%;
     }

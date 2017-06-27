@@ -59,4 +59,10 @@ $(document).ready(function () {
         midClick: true
     });
 
+
+    if($('.layout-img').length > 0){
+        $('.layout-img').zoom({
+            url: $('.layout-img').data('url')
+        });
+    }
 });

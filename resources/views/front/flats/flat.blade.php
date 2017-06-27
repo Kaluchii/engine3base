@@ -35,8 +35,9 @@
                 </div>
             </div>
             <div class="layout-map">
-                <div class="layout-img"><img src="{{$layout->layout_scheme_field->link}}"
-                                             alt="{{$layout->layout_scheme_field->alt}}"></div>
+                <div class="layout-img" data-url="{{$layout->layout_scheme_field->link}}">
+                    <img src="{{$layout->layout_scheme_field->link}}" alt="{{$layout->layout_scheme_field->alt}}" class="layout-image">
+                </div>
                 <div class="right-block">
                     <div class="flat-conditions">
                         <div class="conditions-item">
