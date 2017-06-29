@@ -62,7 +62,8 @@ $(document).ready(function () {
 
     if($('.layout-img').length > 0){
         $('.layout-img').zoom({
-            url: $('.layout-img').data('url')
+            url: $('.layout-img').data('url'),
+            on:'grab'
         });
     }
 });
