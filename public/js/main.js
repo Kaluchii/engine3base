@@ -59,11 +59,19 @@ $(document).ready(function () {
         midClick: true
     });
 
+    function ZoomIn() {
+        $('.layout-img').addClass('zoom');
+    }
+    function ZoomOut() {
+        $('.layout-img').removeClass('zoom');
+    }
 
     if($('.layout-img').length > 0){
         $('.layout-img').zoom({
             url: $('.layout-img').data('url'),
-            on: 'click'
+            on: 'click',
+            onZoomIn: ZoomIn,
+            onZoomOut: ZoomOut
         });
     }
 });
