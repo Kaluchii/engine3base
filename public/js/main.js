@@ -58,6 +58,16 @@ $(document).ready(function () {
         },
         midClick: true
     });
+    $('#installment_plan').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
+            }
+        },
+        midClick: true
+    });
 
     function ZoomIn() {
         $('.layout-img').addClass('zoom');

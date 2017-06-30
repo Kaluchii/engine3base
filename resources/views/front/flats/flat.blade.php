@@ -91,6 +91,8 @@
                 о просмотре в удобное для вас время.</p>
             <div class="phone"><span class="binct-phone-number-1">{{$static->phone_field}}</span></div>
             <button class="send-button" href="#question" id="write">Написать письмо</button>
+            <div><a href="#calculator" id="installment_plan"> Рассчитать рассрочку</a></div>
         </div>
+        @include('front.popups.calculator')
     </section>
 @endsection
