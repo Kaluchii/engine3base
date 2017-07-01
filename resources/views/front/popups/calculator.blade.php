@@ -25,7 +25,7 @@
         <div class="calculator__row">
             <p class="calculator__row-title">Ваш первоначальный взнос, тг <span class="calculator__clarification calculator__clarification--yellow-bg">не менее 30%</span></p>
             <div class="calculator__contribution-row">
-                <input type="text" class="calculator__contribution-input">
+                <input type="text" class="calculator__contribution-input" data-dollar_price="{{$course->dollar_field}}">
                 <span class="calculator__contribution-dollar"></span>
             </div>
         </div>
@@ -42,9 +42,9 @@
         <hr class="calculator__hr">
         <button class="calculator__calc">Рассчитать рассрочку</button>
 
-        <div class="calculator__row">
+        <div class="calculator__row calculator__row--payment">
             <p class="calculator__row-title">Ежемесячный платеж</p>
-            <p class="calculator__payment"><span class="calculator__payment-tg"></span> тг (<span class="calculator__payment-dollar"></span> $)</p>
+            <p class="calculator__payment"><span class="calculator__payment-tg-wrap"><span class="calculator__payment-tg"></span> тг </span><span class="calculator__payment-dollar-wrap">(<span class="calculator__payment-dollar"></span> $)</span></p>
         </div>
     </div>
 </div>

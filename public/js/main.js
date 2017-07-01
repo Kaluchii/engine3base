@@ -108,6 +108,16 @@ $(document).ready(function () {
         });
 
 
+        function buttonCondition() {
+            var area = $('.calculator__layout-area-btn--active').data('area'),
+                meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
+
+            if(Math.round(area * meter_price_tg / 10 * 3) <= $('.calculator__contribution-input').val()){
+                $('.calculator__calc').addClass('calculator__calc--active');
+            }else{
+                $('.calculator__calc').removeClass('calculator__calc--active');
+            }
+        }
 
         /***
          number - исходное число
@@ -165,15 +175,19 @@ $(document).ready(function () {
 
         function contributionHint() {
             var area = $('.calculator__layout-area-btn--active').data('area'),
-                meter_price_dollar = $('.calculator__flat-cost').data('meter_dollar_cost'),
                 meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
             var half_tg = number_format( Math.round(area * meter_price_tg / 10 * 3), 0, ',', ' ' );
-            var half_dl = number_format( Math.round(area * meter_price_dollar / 10 * 3), 0, ',', ' ' );
 
             $('.calculator__contribution-input').attr('placeholder', 'от ' + half_tg + ' тг');
-            $('.calculator__contribution-dollar').text(half_dl + ' $');
         }
 
+
+        $('.calculator__contribution-input').on('input', function () {
+            var dollar_price = $(this).data('dollar_price');
+            var dollars = number_format( Math.round($('.calculator__contribution-input').val() / dollar_price), 0, ',', ' ' );
+            $('.calculator__contribution-dollar').text(dollars + ' $');
+            buttonCondition();
+        });
 
         layoutPrice();
         contributionHint();
@@ -184,6 +198,27 @@ $(document).ready(function () {
             $(this).addClass('calculator__layout-area-btn--active');
             layoutPrice();
             contributionHint();
+            buttonCondition();
+        });
+
+        function count() {
+            var area = $('.calculator__layout-area-btn--active').data('area'),
+                priceTg = $('.calculator__flat-cost').data('meter_tg_cost'),
+                priceDl = $('.calculator__flat-cost').data('meter_dollar_cost'),
+                firstContribTg = $('.calculator__contribution-input').val(),
+                firstContribDl = Math.round($('.calculator__contribution-input').val() / $('.calculator__contribution-input').data('dollar_price')),
+                term = $('.digit-incrementer__result').val();
+
+            $('.calculator__payment-tg').text(number_format(Math.round((priceTg * area - firstContribTg) / term), 0, ',', ' ' ));
+            $('.calculator__payment-dollar').text(number_format(Math.round((priceDl * area - firstContribDl) / term), 0, ',', ' ' ));
+
+            $('.calculator__row--payment').css('opacity', '1')
+        }
+
+        $('.calculator__calc').on('click', function () {
+            if($(this).hasClass('calculator__calc--active')){
+                count();
+            }
         });
     }
 });
