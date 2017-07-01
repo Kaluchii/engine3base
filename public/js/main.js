@@ -69,19 +69,121 @@ $(document).ready(function () {
         midClick: true
     });
 
-    function ZoomIn() {
-        $('.layout-img').addClass('zoom');
-    }
-    function ZoomOut() {
-        $('.layout-img').removeClass('zoom');
-    }
 
     if($('.layout-img').length > 0){
+        function ZoomIn() {
+            $('.layout-img').addClass('zoom');
+        }
+        function ZoomOut() {
+            $('.layout-img').removeClass('zoom');
+        }
+
         $('.layout-img').zoom({
             url: $('.layout-img').data('url'),
             on: 'click',
             onZoomIn: ZoomIn,
             onZoomOut: ZoomOut
+        });
+    }
+
+    if($('.calculator').length > 0) {
+
+        $('.digit-incrementer__button--dec').on('click', function () {
+            var value = $('.digit-incrementer__result').attr('value');
+
+            if(value > 1){
+                value --;
+                $('.digit-incrementer__result').attr('value', value);
+            }
+        });
+
+
+        $('.digit-incrementer__button--inc').on('click', function () {
+            var value = $('.digit-incrementer__result').attr('value');
+
+            if(value < 12){
+                value ++;
+                $('.digit-incrementer__result').attr('value', value);
+            }
+        });
+
+
+
+        /***
+         number - исходное число
+         decimals - количество знаков после разделителя
+         dec_point - символ разделителя
+         thousands_sep - разделитель тысячных
+         fractional_not_view - не отображать знаки после разделителя у целых чисел
+         ***/
+        function number_format(number, decimals, dec_point, thousands_sep, fractional_not_view) {
+            number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+            var n = !isFinite(+number) ? 0 : +number,
+                prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+                sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+                dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+                fr_not_view = (typeof fractional_not_view === 'undefined') ? false : fractional_not_view,
+                s = '',
+                toFixedFix = function(n, prec) {
+                    var k = Math.pow(10, prec);
+                    return '' + (Math.round(n * k) / k)
+                            .toFixed(prec);
+                };
+            // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+            s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+                .split('.');
+            if (s[0].length > 3) {
+                s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+            }
+            // Чтобы не отображать знаки после запятой у целых чисел
+            if (fr_not_view && (n - Math.round(n) == 0)){
+                return n;
+            }
+            //////
+            if ((s[1] || '')
+                    .length < prec) {
+                s[1] = s[1] || '';
+                s[1] += new Array(prec - s[1].length + 1)
+                    .join('0');
+            }
+            return s.join(dec);
+        }
+
+        $('.calculator__layout-area-btn').each(function () {
+            $(this).text( number_format( $(this).text(), 1, ',', ' ', true ) );
+        });
+
+        function layoutPrice() {
+            var area = $('.calculator__layout-area-btn--active').data('area'),
+                meter_price_dollar = $('.calculator__flat-cost').data('meter_dollar_cost'),
+                meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
+
+            $('.calculator__flat-cost-tg').text( number_format( Math.round(area * meter_price_tg), 0, ',', ' ' ) );
+            $('.calculator__flat-cost-dollars').text( number_format( Math.round(area * meter_price_dollar), 0, ',', ' ' ) );
+        }
+
+
+        function contributionHint() {
+            var area = $('.calculator__layout-area-btn--active').data('area'),
+                meter_price_dollar = $('.calculator__flat-cost').data('meter_dollar_cost'),
+                meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
+            var half_tg = number_format( Math.round(area * meter_price_tg / 10 * 3), 0, ',', ' ' );
+            var half_dl = number_format( Math.round(area * meter_price_dollar / 10 * 3), 0, ',', ' ' );
+
+            $('.calculator__contribution-input').attr('placeholder', 'от ' + half_tg + ' тг');
+            $('.calculator__contribution-dollar').text(half_dl + ' $');
+        }
+
+
+        layoutPrice();
+        contributionHint();
+
+
+        $('.calculator__layout-area-btn').on('click', function () {
+            $('.calculator__layout-area-btn--active').removeClass('calculator__layout-area-btn--active');
+            $(this).addClass('calculator__layout-area-btn--active');
+            layoutPrice();
+            contributionHint();
         });
     }
 });

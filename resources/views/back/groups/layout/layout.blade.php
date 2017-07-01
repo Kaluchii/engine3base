@@ -234,6 +234,22 @@
             </div>
         </div>
     </div>
+
+    <div class="box box-info group-item-widget"
+         data-block="area_list">
+        <div class="box-header with-border">
+            <h3 class="box-title">Варианты размеров планировки</h3>
+            <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
+        </div>
+        <div class="box-body">
+            <div class="groupflat-widget group-item-wrap">
+                @foreach($item->area_list_group as $item_area)
+                    @include('back.groups.area_list.area_list_box', ['item' => $item_area])
+                @endforeach
+            </div>
+        </div>
+    </div>
+
     <div class="box box box-success">
 
         <div class="box-header with-border">

@@ -73,6 +73,10 @@ return [
                 'bool' => ['balcony'],
                 'dom_flat' => ['superior']
             ],
+            'area_list' => [
+                'float' => ['area'],
+                'layout' => ['superior']
+            ],
         ]
     ],
 
