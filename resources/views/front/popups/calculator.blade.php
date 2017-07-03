@@ -34,7 +34,7 @@
             <p class="calculator__row-title">Срок рассрочки <span class="calculator__clarification">(от 1 до 12 месяцев)</span></p>
             <div class="calculator__digit-incrementer digit-incrementer">
                 <button class="digit-incrementer__button digit-incrementer__button--dec">–</button>
-                <input disabled type="text" class="digit-incrementer__result" value="1" readonly max="12" min="1" maxlength="2">
+                <input disabled type="text" class="digit-incrementer__result" value="12" readonly max="12" min="1" maxlength="2">
                 <button class="digit-incrementer__button digit-incrementer__button--inc">+</button>
             </div>
         </div>

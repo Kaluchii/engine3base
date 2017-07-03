@@ -61,7 +61,7 @@
                                 тг <span class="baks">({{number_format($layout->min_area_field * $course->meter_cost_field / 10 * 7 / 12, 0, '', ' ')}}&nbsp;$)</span>
                                 ежемесячно
                             </p>
-                            <p class="row"><a class="calculator-link link" href="#calculator" id="installment_plan">Рассчитать</a></p>
+                            <p class="row"><a class="calculator-link link" href="#calculator" id="installment_plan">Рассчитать рассрочку</a></p>
                         </div>
                     </div>
                     <div class="legend">
