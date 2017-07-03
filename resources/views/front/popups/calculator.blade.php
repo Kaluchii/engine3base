@@ -1,7 +1,7 @@
 <div class="hide">
     <div class="white-popup mfp-with-anim mfp-hide calculator" id="calculator">
-        <h4 class="calculator__title">Рассчитать рассрочку</h4>
-        <p class="calculator__layout-name">{{$layout->superior_item->flat_title_field}} • {{$layout->layout_name_field}}</p>
+        <h4 class="calculator__title">Рассчитать беспроцентную рассрочку</h4>
+        <p class="calculator__flat-row"><span class="calculator__flat-rooms-count">{{$layout->superior_item->flat_title_field}}</span><span class="calculator__flat-separator"> • </span><span class="calculator__flat-layout">{{$layout->layout_name_field}}</span></p>
         <hr class="calculator__hr">
 
         <div class="calculator__row">

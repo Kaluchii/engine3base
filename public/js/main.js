@@ -178,7 +178,7 @@ $(document).ready(function () {
                 meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
             var half_tg = number_format( Math.round(area * meter_price_tg / 10 * 3), 0, ',', ' ' );
 
-            $('.calculator__contribution-input').attr('placeholder', 'от ' + half_tg + ' тг');
+            $('.calculator__contribution-input').attr('placeholder', 'не менее ' + half_tg + ' тг');
         }
 
 

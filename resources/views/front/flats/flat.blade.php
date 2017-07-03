@@ -61,6 +61,7 @@
                                 тг <span class="baks">({{number_format($layout->min_area_field * $course->meter_cost_field / 10 * 7 / 12, 0, '', ' ')}}&nbsp;$)</span>
                                 ежемесячно
                             </p>
+                            <p class="row"><a class="calculator-link link" href="#calculator" id="installment_plan">Рассчитать</a></p>
                         </div>
                     </div>
                     <div class="legend">
@@ -91,7 +92,6 @@
                 о просмотре в удобное для вас время.</p>
             <div class="phone"><span class="binct-phone-number-1">{{$static->phone_field}}</span></div>
             <button class="send-button" href="#question" id="write">Написать письмо</button>
-            <div><a href="#calculator" id="installment_plan"> Рассчитать рассрочку</a></div>
         </div>
         @include('front.popups.calculator')
     </section>

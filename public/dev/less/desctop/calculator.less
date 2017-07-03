@@ -4,13 +4,18 @@
 
   &__title{
     color: #333333;
-    font-size: 36px;
-    text-align: left;
+    font-size: 32px;
   }
 
-  &__layout-name{
+  &__flat-row{
     margin-top: 20px;
   }
+
+  &__flat-rooms-count{}
+
+  &__flat-separator{}
+
+  &__flat-layout{}
 
   &__hr{
     margin-top: 15px;
@@ -19,7 +24,7 @@
   }
 
   &__row{
-    margin-top: 20px;
+    margin-top: 25px;
 
     &--payment{
       opacity: 0;
@@ -69,7 +74,8 @@
   }
 
   &__contribution-input{
-    width: 260px;
+    width: ~'calc(100% - 90px)';
+    max-width: 260px;
     height: 40px;
     padding: 0 15px;
     box-sizing: border-box;
@@ -95,6 +101,7 @@
 
   &__clarification{
     color: #999999;
+    white-space: nowrap;
 
     &--yellow-bg{
       padding: 2px 4px;
@@ -122,10 +129,11 @@
   &__payment{
     margin-top: 5px;
     color: #333333;
-    font-size: 36px;
+    font-size: 32px;
   }
 
   &__payment-dollar-wrap{
+    white-space: nowrap;
     color: #999999;
   }
 }
