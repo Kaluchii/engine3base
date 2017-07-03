@@ -21,6 +21,7 @@ class AdminController extends Controller
         $this->extract->tuneSelection('place')->sortBy('id','DESC');
         $this->extract->tuneSelection('slider_from')->sortBy('id','DESC');
         $this->extract->tuneSelection('marker')->sortBy('id','DESC');
+        $this->extract->tuneSelection('area_list')->sortBy('id','DESC');
     }
 
 
