@@ -25,7 +25,7 @@
         <div class="calculator__row">
             <p class="calculator__row-title">Ваш первоначальный взнос, тг <span class="calculator__clarification calculator__clarification--yellow-bg">не менее 30%</span></p>
             <div class="calculator__contribution-row">
-                <input type="text" class="calculator__contribution-input" data-dollar_price="{{$course->dollar_field}}">
+                <input type="tel" id="contribution" class="calculator__contribution-input" data-dollar_price="{{$course->dollar_field}}">
                 <span class="calculator__contribution-dollar"></span>
             </div>
         </div>

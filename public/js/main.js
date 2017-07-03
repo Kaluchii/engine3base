@@ -70,10 +70,11 @@ $(document).ready(function () {
     });
 
 
-    if($('.layout-img').length > 0){
+    if ($('.layout-img').length > 0) {
         function ZoomIn() {
             $('.layout-img').addClass('zoom');
         }
+
         function ZoomOut() {
             $('.layout-img').removeClass('zoom');
         }
@@ -86,13 +87,66 @@ $(document).ready(function () {
         });
     }
 
-    if($('.calculator').length > 0) {
+    if ($('.calculator').length > 0) {
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        // в инпут только цифры #roof, #roof2
+
+        $(document).ready(function () {
+
+            $(".calculator__contribution-input").keydown(function (event) {
+                // Разрешаем: backspace, delete, tab и escape
+                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+                    // Разрешаем: Ctrl+A
+                    (event.keyCode == 65 && event.ctrlKey === true) ||
+                    // Разрешаем: home, end, влево, вправо
+                    (event.keyCode >= 35 && event.keyCode <= 39)) {
+                    // Ничего не делаем
+                    return;
+                }
+
+                else {
+                    // Убеждаемся, что это цифра, и останавливаем событие keypress
+                    if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                        event.preventDefault();
+                    }
+                }
+            });
+
+        });
+
+        // разделение цифр в инпуте
+
+        (function () {
+
+            var prev_value = "";
+
+            var input = document.getElementById("contribution");
+
+            input.onkeyup = input.onchange = input.onpaste = function () {
+
+                this.value = this.value.replace(/[^\d\s]/g, "");
+
+                if (prev_value == this.value)// отслеживаем изменение значения
+
+                    return;
+
+                prev_value = this.value;
+
+                this.value = this.value.replace(/[^\d]/g, "").split("").reverse().join("").replace(/\d{3}(?!$|(?:\s$))/g, "$& ").split("").reverse().join("");
+
+            };
+
+        })();
+
 
         $('.digit-incrementer__button--dec').on('click', function () {
             var value = $('.digit-incrementer__result').attr('value');
 
-            if(value > 1){
-                value --;
+            if (value > 1) {
+                value--;
                 $('.digit-incrementer__result').attr('value', value);
             }
         });
@@ -101,8 +155,8 @@ $(document).ready(function () {
         $('.digit-incrementer__button--inc').on('click', function () {
             var value = $('.digit-incrementer__result').attr('value');
 
-            if(value < 12){
-                value ++;
+            if (value < 12) {
+                value++;
                 $('.digit-incrementer__result').attr('value', value);
             }
         });
@@ -112,9 +166,9 @@ $(document).ready(function () {
             var area = $('.calculator__layout-area-btn--active').data('area'),
                 meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
 
-            if(Math.round(area * meter_price_tg / 10 * 3) <= $('.calculator__contribution-input').val()){
+            if (Math.round(area * meter_price_tg / 10 * 3) <= $('.calculator__contribution-input').val().replace(/\s+/g,'')) {
                 $('.calculator__calc').addClass('calculator__calc--active');
-            }else{
+            } else {
                 $('.calculator__calc').removeClass('calculator__calc--active');
             }
         }
@@ -134,7 +188,7 @@ $(document).ready(function () {
                 dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
                 fr_not_view = (typeof fractional_not_view === 'undefined') ? false : fractional_not_view,
                 s = '',
-                toFixedFix = function(n, prec) {
+                toFixedFix = function (n, prec) {
                     var k = Math.pow(10, prec);
                     return '' + (Math.round(n * k) / k)
                             .toFixed(prec);
@@ -146,7 +200,7 @@ $(document).ready(function () {
                 s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
             }
             // Чтобы не отображать знаки после запятой у целых чисел
-            if (fr_not_view && (n - Math.round(n) == 0)){
+            if (fr_not_view && (n - Math.round(n) == 0)) {
                 return n;
             }
             //////
@@ -160,7 +214,7 @@ $(document).ready(function () {
         }
 
         $('.calculator__layout-area-btn').each(function () {
-            $(this).text( number_format( $(this).text(), 1, ',', ' ', true ) );
+            $(this).text(number_format($(this).text(), 1, ',', ' ', true));
         });
 
         function layoutPrice() {
@@ -168,15 +222,15 @@ $(document).ready(function () {
                 meter_price_dollar = $('.calculator__flat-cost').data('meter_dollar_cost'),
                 meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
 
-            $('.calculator__flat-cost-tg').text( number_format( Math.round(area * meter_price_tg), 0, ',', ' ' ) );
-            $('.calculator__flat-cost-dollars').text( number_format( Math.round(area * meter_price_dollar), 0, ',', ' ' ) );
+            $('.calculator__flat-cost-tg').text(number_format(Math.round(area * meter_price_tg), 0, ',', ' '));
+            $('.calculator__flat-cost-dollars').text(number_format(Math.round(area * meter_price_dollar), 0, ',', ' '));
         }
 
 
         function contributionHint() {
             var area = $('.calculator__layout-area-btn--active').data('area'),
                 meter_price_tg = $('.calculator__flat-cost').data('meter_tg_cost');
-            var half_tg = number_format( Math.round(area * meter_price_tg / 10 * 3), 0, ',', ' ' );
+            var half_tg = number_format(Math.round(area * meter_price_tg / 10 * 3), 0, ',', ' ');
 
             $('.calculator__contribution-input').attr('placeholder', 'не менее ' + half_tg + ' тг');
         }
@@ -184,7 +238,7 @@ $(document).ready(function () {
 
         $('.calculator__contribution-input').on('input', function () {
             var dollar_price = $(this).data('dollar_price');
-            var dollars = number_format( Math.round($('.calculator__contribution-input').val() / dollar_price), 0, ',', ' ' );
+            var dollars = number_format(Math.round($('.calculator__contribution-input').val().replace(/\s+/g,'') / dollar_price), 0, ',', ' ');
             $('.calculator__contribution-dollar').text(dollars + ' $');
             buttonCondition();
         });
@@ -194,7 +248,7 @@ $(document).ready(function () {
 
 
         $('.calculator__layout-area-btn').on('click', function () {
-            if( !$(this).hasClass('calculator__layout-area-btn--active') ){
+            if (!$(this).hasClass('calculator__layout-area-btn--active')) {
                 $('.calculator__layout-area-btn--active').removeClass('calculator__layout-area-btn--active');
                 $(this).addClass('calculator__layout-area-btn--active');
                 $('.calculator__contribution-input').val('');
@@ -203,22 +257,25 @@ $(document).ready(function () {
                 buttonCondition();
             }
         });
+
         function count() {
             var area = $('.calculator__layout-area-btn--active').data('area'),
                 priceTg = $('.calculator__flat-cost').data('meter_tg_cost'),
                 priceDl = $('.calculator__flat-cost').data('meter_dollar_cost'),
-                firstContribTg = $('.calculator__contribution-input').val(),
-                firstContribDl = Math.round($('.calculator__contribution-input').val() / $('.calculator__contribution-input').data('dollar_price')),
+                firstContribTg = $('.calculator__contribution-input').val().replace(/\s+/g,''),
+                firstContribDl = Math.round(firstContribTg / $('.calculator__contribution-input').data('dollar_price')),
                 term = $('.digit-incrementer__result').val();
 
-            $('.calculator__payment-tg').text(number_format(Math.round((priceTg * area - firstContribTg) / term), 0, ',', ' ' ));
-            $('.calculator__payment-dollar').text(number_format(Math.round((priceDl * area - firstContribDl) / term), 0, ',', ' ' ));
+
+
+            $('.calculator__payment-tg').text(number_format(Math.round((priceTg * area - firstContribTg) / term), 0, ',', ' '));
+            $('.calculator__payment-dollar').text(number_format(Math.round((priceDl * area - firstContribDl) / term), 0, ',', ' '));
 
             $('.calculator__row--payment').css('opacity', '1')
         }
 
         $('.calculator__calc').on('click', function () {
-            if($(this).hasClass('calculator__calc--active')){
+            if ($(this).hasClass('calculator__calc--active')) {
                 count();
             }
         });
