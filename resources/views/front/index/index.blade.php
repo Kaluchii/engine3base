@@ -137,9 +137,9 @@
         <div class="more-news">
             <h3 class="title">Больше фотографий и новостей</h3>
             <div class="social-buttons">
-                <a {{--href="{{$static->fb_field}}"--}} rel="nofollow" target="_blank" class="soc-button fb"></a>
-                <a {{--href="{{$static->inst_field}}"--}} rel="nofollow" target="_blank" class="soc-button inst"></a>
-                <a {{--href="{{$static->vk_field}}"--}} rel="nofollow" target="_blank" class="soc-button vk"></a>
+                <a href="{{$static->fb_field}}" rel="nofollow" target="_blank" class="soc-button fb"></a>
+                <a href="{{$static->inst_field}}" rel="nofollow" target="_blank" class="soc-button inst"></a>
+                <a href="{{$static->vk_field}}" rel="nofollow" target="_blank" class="soc-button vk"></a>
             </div>
         </div>
         <div class="wrapper">
